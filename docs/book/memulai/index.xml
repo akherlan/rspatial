@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memulai on Spatial with R</title>
-    <link>/./book/memulai/</link>
+    <link>/book/memulai/</link>
     <description>Recent content in Memulai on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/./book/memulai/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/book/memulai/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

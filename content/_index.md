@@ -13,13 +13,13 @@ Laman referensi belajar ini merupakan impian saya sejak lama yang baru bisa diwu
 {{< columns >}}
 ## Baru mengenal GIS?
 
-Kamu perlu mempelajari dasar-dasar GIS pada bagian [**Memulai**](./book/memulai/). Kita akan mempelajari bagaimana alam nyata ini diterjemahkan ke dalam bentuk sistem informasi berbasis komputer. Hal ini dimaksudkan agar kamu tidak keteteran untuk bisa memahami materi inti dan berbagai tutorial.
+Kamu perlu mempelajari dasar-dasar GIS pada bagian [**Memulai**](book/memulai/). Kita akan mempelajari bagaimana alam nyata ini diterjemahkan ke dalam bentuk sistem informasi berbasis komputer. Hal ini dimaksudkan agar kamu tidak keteteran untuk bisa memahami materi inti dan berbagai tutorial.
 
 <--->
 
 ## Sudah paham dasar-dasar GIS?
 
-Bila kamu mereasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke bagian [**Lanjutan**](./book/lanjutan/) karena di sana akan lebih menyenangkan! Kita akan mempelajari bagaimana R bisa kita gunakan untuk pengolahan dan analisis data spasial. Termasuk contoh-contoh sederhananya.
+Bila kamu mereasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke bagian [**Lanjutan**](book/lanjutan/) karena di sana akan lebih menyenangkan! Kita akan mempelajari bagaimana R bisa kita gunakan untuk pengolahan dan analisis data spasial. Termasuk contoh-contoh sederhananya.
 {{< /columns >}}
 
 ## Cari informasi berdasarkan istilah
@@ -28,13 +28,13 @@ Jika kamu ingin mempelajari sesuatu yang kamu tahu istilahnya tapi butuh informa
 
 ## Paham dasar-dasar R dan ingin berkreasi dengan data spasial?
 
-Jika ingin berkreasi, [**Tutorial**](./tutorials) adalah bagian yang cocok untuk kamu jelajahi.
+Jika ingin berkreasi, [**Tutorial**](posts) adalah bagian yang cocok untuk kamu jelajahi.
 
 # Disclaimer!
 
 - Saya bukan ahli pada bidang pemetaan.
 - Saya hanya seorang yang gemar (sangat) dengan teknologi komputer khususnya pengembangan perangkat lunak berbasis sumber terbuka (_open source_) dan komputer linux.
-- Saya mempelajari berbagai hal terkait geospasial, geomatika, dan data spasial secara mandiri menggunakan bahan-bahan belajar yang ada di internet. Jika kamu juga ingin mempelajari pengolahan dan analisis data spasial melalui sumber-sumber belajar saya, silakan pergi ke laman [daftar sumber belajar](./book/referensi).
+- Saya mempelajari berbagai hal terkait geospasial, geomatika, dan data spasial secara mandiri menggunakan bahan-bahan belajar yang ada di internet. Jika kamu juga ingin mempelajari pengolahan dan analisis data spasial melalui sumber-sumber belajar saya, silakan pergi ke laman [daftar sumber belajar](book/referensi).
 
 # Tentang Penulis
 
