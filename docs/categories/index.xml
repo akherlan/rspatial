@@ -5,10 +5,19 @@
     <link>/rspatial/categories/</link>
     <description>Recent content in Categories on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/rspatial/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>visualisasi</title>
+      <link>/rspatial/categories/visualisasi/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/categories/visualisasi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>
@@ -16,24 +25,6 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/rspatial/categories/R/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>/rspatial/categories/Development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/categories/Development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>/rspatial/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/categories/golang/</guid>
       <description></description>
     </item>
     

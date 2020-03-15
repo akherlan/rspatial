@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persiapan Program on Spatial with R</title>
+    <link>/rspatial/book/memulai/persiapan/</link>
+    <description>Recent content in Persiapan Program on Spatial with R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/rspatial/book/memulai/persiapan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R dan RStudio</title>
+      <link>/rspatial/book/memulai/persiapan/rstudio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/persiapan/rstudio/</guid>
+      <description>R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya.</description>
+    </item>
+    
+    <item>
+      <title>QGIS - Gratis dan Powerfull</title>
+      <link>/rspatial/book/memulai/persiapan/qgis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/persiapan/qgis/</guid>
+      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip; Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ini sangat direkomendasikan. Tapi belum tentu untuk para mahasiswa kantong rata.</description>
+    </item>
+    
+  </channel>
+</rss>

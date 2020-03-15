@@ -31,19 +31,14 @@ enableGitInfo = true
 [menu]
 # [[menu.before]]
 [[menu.after]]
-  name = "Blog"
-  url = "https://akherlan.github.io/"
+  name = "Kontribusi"
+  url = "https://akherlan.github.io/rspatial/kontribusi"
   weight = 10
 
 [[menu.after]]
-  name = "Github"
-  url = "https://github.com/akherlan/"
+  name = "Kode Sumber"
+  url = "https://github.com/akherlan/rspatial"
   weight = 20
-
-[[menu.after]]
-  name = "Twitter"
-  url = "https://twitter.com/terusterang__"
-  weight = 30
 
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.

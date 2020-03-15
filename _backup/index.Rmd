@@ -1,5 +1,0 @@
----
-pagetitle: "Spatial with R"
-author: "Andi"
----
-

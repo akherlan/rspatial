@@ -1,7 +1,7 @@
 ---
 menu:
   after:
-    name: tutorial
+    name: vinyet
     weight: 5
-title: Tutorial
+title: Vinyet
 ---

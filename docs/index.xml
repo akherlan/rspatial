@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pengenalan on Spatial with R</title>
+    <title>Belajar GIS dengan R on Spatial with R</title>
     <link>/rspatial/</link>
-    <description>Recent content in Pengenalan on Spatial with R</description>
+    <description>Recent content in Belajar GIS dengan R on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="/rspatial/index.xml" rel="self" type="application/rss+xml" />
@@ -20,6 +20,18 @@
     </item>
     
     <item>
+      <title>R dan RStudio</title>
+      <link>/rspatial/book/memulai/persiapan/rstudio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/persiapan/rstudio/</guid>
+      <description>R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya.</description>
+    </item>
+    
+    <item>
       <title>Mengenal Raster</title>
       <link>/rspatial/book/memulai/gis-dasar/raster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -30,24 +42,46 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>/rspatial/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>QGIS - Gratis dan Powerfull</title>
+      <link>/rspatial/book/memulai/persiapan/qgis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/rspatial/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>/rspatial/book/memulai/persiapan/qgis/</guid>
+      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip; Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ini sangat direkomendasikan. Tapi belum tentu untuk para mahasiswa kantong rata.</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/rspatial/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>Referensi</title>
+      <link>/rspatial/referensi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/rspatial/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>/rspatial/referensi/</guid>
+      <description>Daftar Sumber Belajar Kami telah mengumpulkan berbagai sumber yang bisa kita gunakan untuk memperkaya pengetahuan, juga meningkatkan kecakapan kita dalam melakukan analisis spasial dan menggunakan program komputer GIS.
+ Geocomputational with R | gratis | buku online Geographic Data and Python - Pauline Chow | gratis | presentasi Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor   </description>
+    </item>
+    
+    <item>
+      <title>Kontribusi</title>
+      <link>/rspatial/kontribusi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/kontribusi/</guid>
+      <description>Kontribusi Proyek laman web referensi ini merupakan proyek terbuka dengan lisensi terbuka. Sehingga sangat menerima teman-teman yang ingin menyumbangkan tenaga, pikiran, ide, materi, serta apapun itu untuk memajukan proyek ini.
+Kode sumber untuk laman web ini tersedia di repo Github-nya.
+Untuk informasi lebih lanjut bisa kontak ke maintener saat ini ( Andi ).
+Donasi Kami juga menerima donasi untuk kelancaran proyek ini.
+ </description>
+    </item>
+    
+    <item>
+      <title>Menentukan Batas Plot Peta di R</title>
+      <link>/rspatial/posts/batas-plot-peta-locator/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/posts/batas-plot-peta-locator/</guid>
+      <description>Kita akan menggunakan fungsi locator(1) dari paket graphics untuk memperoleh nilai koordinat pada kanvas plot. Kita akan menggunakan nilai-nilai ini sebagai batas plot peta Indonesia dan negara sekitarnya. Sehingga tidak perlu lagi menduga-duga berapa nilai yang tepat untuk batas peta tersebut.
+Beberapa library R yang akan kita gunakan kali ini diantaranya:
+library(&amp;quot;rnaturalearth&amp;quot;) # data peta dari Natural Earth library(&amp;quot;sf&amp;quot;) # mengelola data peta simple feature library(&amp;quot;ggplot2&amp;quot;) # untuk plot library(&amp;quot;dplyr&amp;quot;) # agar kita bisa melakukan piping (%&amp;gt;%) Katakanlah kita ingin menampilkan peta wilayah Asia Tenggara dan sedikit bagian Oceania dan Australia.</description>
     </item>
     
     <item>
@@ -59,30 +93,6 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/rspatial/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/rspatial/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
     <item>
