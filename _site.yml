@@ -1,0 +1,17 @@
+name: "rspatial"
+output_dir: "docs"
+navbar:
+  title: "Spatial with R"
+  left:
+    - text: "Blog"
+      href: https://akherlan.github.io/
+  right:
+    - icon: fa-github fa-lg
+      href: http://github.com/akherlan
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/terusterang__
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/andiherlan/
+output:
+  html_document:
+    theme: paper
