@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = ""
+baseURL = "https://akherlan.github.io/rspatial/"
 title = "Spatial with R"
 theme = "hugo-book"
 publishDir = "docs"
