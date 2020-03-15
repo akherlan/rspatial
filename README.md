@@ -1,0 +1,3 @@
+# rspatial
+Proyek inisiasi untuk R dalam bidang teknik sipil dan geomatika
+Bismillah...
