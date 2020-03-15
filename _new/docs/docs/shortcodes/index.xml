@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatial with R</title>
+    <link>/./docs/shortcodes/</link>
+    <description>Recent content on Spatial with R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/./docs/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/buttons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/columns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/columns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/expand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/expand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/hints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/hints/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/katex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/./docs/shortcodes/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/./docs/shortcodes/tabs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

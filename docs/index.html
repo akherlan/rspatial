@@ -1,360 +1,354 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>index.utf8</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+	<meta name="generator" content="Hugo 0.63.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Selamat Datang! Laman referensi belajar ini merupakan impian saya sejak lama yang baru bisa diwujudkan saat ini secara nyicil karena saya juga harus belajar dulu tentang semua ini. Akan disampaikan secara santai namun tetap formal dengan format tutorial dan praktis. Semoga berkenan.
+Cara Menggunakan Web Ini Baru mengenal GIS? Kamu perlu mempelajari dasar-dasar GIS pada bagian Memulai. Kita akan mempelajari bagaimana alam nyata ini diterjemahkan ke dalam bentuk sistem informasi berbasis komputer."><meta property="og:title" content="Pengenalan" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/./" />
+<meta property="og:updated_time" content="2015-07-23T21:13:14-05:00" />
+<title>Pengenalan | Spatial with R</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+<link rel="stylesheet" href="/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
+<script defer src="/en.search.min.69736d6c1f622e0a72041fe5373181bb5c471c6ae948fbc7e10cf7a7fb8973e5.js" integrity="sha256-aXNtbB9iLgpyBB/lNzGBu1xHHGrpSPvH4Qz3p/uJc&#43;U="></script>
 
+<link rel="alternate" type="application/rss+xml" href="/./index.xml" title="Spatial with R" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-
+  
 </head>
 
 <body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Spatial with R</span>
+  </a>
+</h2>
 
 
-<div class="container-fluid main-container">
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
 
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Spatial with R</a>
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/book/memulai/" class="">Memulai</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/book/memulai/gis-dasar/" class="collapsed ">GIS Dasar</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/book/lanjutan/" class="">Lanjutan</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/book/lanjutan/vector/" class="collapsed ">Bekerja dengan Vector</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Tutorial
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://akherlan.github.io/" target="_blank" rel="noopener">
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/akherlan/" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://twitter.com/terusterang__" target="_blank" rel="noopener">
+        Twitter
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Pengenalan</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="selamat-datang">Selamat Datang!</h1>
+<p>Laman referensi belajar ini merupakan impian saya sejak lama yang baru bisa diwujudkan saat ini secara <em>nyicil</em> karena saya juga harus belajar dulu tentang semua ini. Akan disampaikan secara santai namun tetap formal dengan format tutorial dan praktis. Semoga berkenan.</p>
+<h1 id="cara-menggunakan-web-ini">Cara Menggunakan Web Ini</h1>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <h2 id="baru-mengenal-gis">Baru mengenal GIS?</h2>
+<p>Kamu perlu mempelajari dasar-dasar GIS pada bagian <a href="./book/memulai/"><strong>Memulai</strong></a>. Kita akan mempelajari bagaimana alam nyata ini diterjemahkan ke dalam bentuk sistem informasi berbasis komputer. Hal ini dimaksudkan agar kamu tidak keteteran untuk bisa memahami materi inti dan berbagai tutorial.
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <h2 id="sudah-paham-dasar-dasar-gis">Sudah paham dasar-dasar GIS?</h2>
+<p>Bila kamu mereasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke bagian <a href="./book/lanjutan/"><strong>Lanjutan</strong></a> karena di sana akan lebih menyenangkan! Kita akan mempelajari bagaimana R bisa kita gunakan untuk pengolahan dan analisis data spasial. Termasuk contoh-contoh sederhananya.
+  </div>
+  
+</div>
+
+<h2 id="cari-informasi-berdasarkan-istilah">Cari informasi berdasarkan istilah</h2>
+<p>Jika kamu ingin mempelajari sesuatu yang kamu tahu istilahnya tapi butuh informasi lebih tentang itu, bisa dengan menggunakan kolom pencarian yang berada di dalam menu di pojok kiri atas (akses melalui ponsel) atau pada bilah bagian kiri (akses melalui laptop).</p>
+<h2 id="paham-dasar-dasar-r-dan-ingin-berkreasi-dengan-data-spasial">Paham dasar-dasar R dan ingin berkreasi dengan data spasial?</h2>
+<p>Jika ingin berkreasi, 
+  <a href="./tutorials"><strong>Tutorial</strong></a> adalah bagian yang cocok untuk kamu jelajahi.</p>
+<h1 id="disclaimer">Disclaimer!</h1>
+<ul>
+<li>Saya bukan ahli pada bidang pemetaan.</li>
+<li>Saya hanya seorang yang gemar (sangat) dengan teknologi komputer khususnya pengembangan perangkat lunak berbasis sumber terbuka (<em>open source</em>) dan komputer linux.</li>
+<li>Saya mempelajari berbagai hal terkait geospasial, geomatika, dan data spasial secara mandiri menggunakan bahan-bahan belajar yang ada di internet. Jika kamu juga ingin mempelajari pengolahan dan analisis data spasial melalui sumber-sumber belajar saya, silakan pergi ke laman 
+  <a href="/book/referensi/">daftar sumber belajar</a>.</li>
+</ul>
+<h1 id="tentang-penulis">Tentang Penulis</h1>
+<p><strong>Andi</strong> hanyalah 
+  <a href="https://instagram.com/rakyatsipilbiasa">rakyat sipil biasa</a> yang pernah sekolah teknik sipil serta menggemari komputer dan desain grafis. Bekerja di bidang pemetaan sebagai tim hore. Juga sedang merintis usaha coklat yang entah kenapa susah sekali jalannya.</p>
+<p>Kamu bisa menghubungi Andi melalui 
+  <a href="https://t.me/akherlan">Telegram Messenger</a> atau sekadar <em>say hi!</em> melalui 
+  <a href="https://twitter.com/terusterang__">Twitter</a>. Atau minta saja kontak WhatsApp ke temannya. Andi dengan senang hati akan membalas jika sedang <em>gabut</em>.</p>
+<hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/akherlan/rspatial/edit/master/exampleSite/content/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="https://akherlan.github.io/">Blog</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="http://github.com/akherlan">
-    <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://twitter.com/terusterang__">
-    <span class="fa fa-twitter fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/andiherlan/">
-    <span class="fa fa-linkedin fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+    
+  </main>
 
-
-
-
-</div>
-
-
-
-
-
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+  
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
