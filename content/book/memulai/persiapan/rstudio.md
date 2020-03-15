@@ -5,19 +5,21 @@ weight: 1
 
 # Mengenal R dan RStudio
 
-Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda pula.
 
-Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE-nya (Integrated Development Environment).
 
 Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena _nggak guna_.
+
+**Adakah IDE lain selain RStudio?**
 
 Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya. Namun, penulis sangat merekomendasikan penggunaan RStudio karena kaya fitur dan sangat menunjang. Juga mempermudah pekerjaan yang menggunakan R sebagai alat bantunya.
 
 Berikut merupakan contoh yang paling kentara saat membandingkan R dengan RStudio.
 
-[Screenshot R console tanpa R-IDE]
+[akan ada screenshot R console tanpa R-IDE]
 
-[Screenshot R console dengan R-IDE]
+[akan ada screenshot R console dengan R-IDE]
 
 ## Langkah-langkah menginstal R dan RStudio
 

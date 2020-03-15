@@ -9,9 +9,9 @@ weight: 2
 
 Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih _advance_ tentu program ArcGIS desktop sangat direkomendasikan.
 
-Selain untuk destop, ArcGIS juga membuat piranti lunaknya agar dapat berjalan melalui internet (_cloud service_).
+Selain untuk destop, ArcGIS juga dibuat agar dapat berjalan melalui internet (_cloud service_).
 
-Meskipun begitu, kali ini pokoknya kita tetap bahas QGIS dulu! Karena penulis juga belum punya ArcGIS-nya. Mudah-mudahan nanti menyusul kita pakai _software yahuud_ ini.
+Meskipun begitu, kali ini pokoknya kita tetap akan membahas QGIS dulu! Karena penulis juga belum punya ArcGIS-nya. Mudah-mudahan nanti kita bisa bahas _software yahuud_ ini.
 
 ## Sekilas tentang QGIS
 
@@ -39,11 +39,11 @@ sudo apt update
 sudo apt install qgis qgis-python qgis-plugin-grass
 ```
 
-Tetapi jika ingin mendapatkan versi QGIS paling mutakhir, kamu bisa menggunakan repositori `ubuntugis`, cara menambahkannya sementara bisa ikuti langkah yang dijelaskan pada [laman resminya](https://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu). Nanti akan kita masukkan ke web ini di waktu mendatang.
+Tetapi jika ingin mendapatkan versi QGIS paling mutakhir, kamu bisa menggunakan repositori `ubuntugis`. Cara menambahkannya sementara bisa ikuti langkah yang dijelaskan pada [laman resminya](https://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu). Nanti akan kita masukkan ke web ini di waktu mendatang.
 {{< /tab >}}
 
 {{< tab "MacOS" >}}
-**Instalasi R pada sistem MacOS**
+**Instalasi QGIS pada sistem MacOS**
 
 Menyusul, yaaa...
 {{< /tab >}}

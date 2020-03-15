@@ -1,7 +1,7 @@
 ---
 bookCollapseSection: true
 title: Bekerja dengan Vector
-weight: 2
+weight: 1
 ---
 
 # Collapsed Level of Menu

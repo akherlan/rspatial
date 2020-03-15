@@ -42,7 +42,7 @@ Jika kamu ingin berkreasi, [**Vinyet**](posts) adalah bagian yang cocok untuk ka
 
 - Saya bukan ahli pada bidang pemetaan.
 - Saya hanya seorang yang gemar (sangat) dengan teknologi komputer khususnya pengembangan perangkat lunak berbasis sumber terbuka (_open source_) dan komputer linux.
-- Saya mempelajari berbagai hal terkait geospasial, geomatika, dan data spasial secara mandiri menggunakan bahan-bahan belajar yang ada di internet. Jika kamu juga ingin mempelajari pengolahan dan analisis data spasial melalui sumber-sumber belajar saya, silakan pergi ke laman [daftar sumber belajar](referensi).
+- Saya mempelajari berbagai hal terkait geospasial, geomatika, dan data spasial secara mandiri menggunakan bahan-bahan belajar yang ada di internet. Jika kamu juga ingin mempelajari pengolahan dan analisis data spasial melalui sumber-sumber belajar saya, silakan pergi ke laman [Daftar Sumber Belajar](referensi).
 
 # Tentang Penulis
 

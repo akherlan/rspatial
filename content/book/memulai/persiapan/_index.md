@@ -2,7 +2,7 @@
 bookCollapseSection: true
 bookToc: false
 title: Persiapan Program
-weight: 10
+weight: 20
 ---
 
 # Program Komputer GIS
@@ -20,7 +20,7 @@ Selain keduanya, sesungguhnya sangat banyak program GIS yang beredar saat ini, m
 
 Namun tidak semua program tersebut bisa berjalan pada setiap sistem operasi (tidak _multiplatform_). Terlebih lagi, tidak semuanya (hanya beberapa) tersedia secara gratis, bebas, dan terbuka (_free, libre, and open source software_ / FLOSS).
 
-Berangkat dari hal itu, penulis lebih tertarik untuk menggunakan sumber daya yang semua kalangan bisa dapatkan dan tersedia untuk setiap sistem operasi. Yaitu menggunakan _software_ yang gratis dan _multiplatform_. Ini lebih merakyat walaupun perlu upaya khusus untuk mempelajarinya.
+Berangkat dari masalah itu, penulis lebih tertarik untuk menggunakan sumber daya yang semua kalangan bisa dapatkan dan tersedia untuk setiap sistem operasi. Yaitu menggunakan _software_ yang gratis dan _multiplatform_. Ini lebih merakyat walaupun perlu upaya khusus untuk mempelajarinya.
 
 Semoga berkenan.
 
