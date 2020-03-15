@@ -3,161 +3,161 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/book/memulai/</loc>
+    <loc>/rspatial/book/memulai/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/memulai/gis-dasar/vector/</loc>
+    <loc>/rspatial/book/memulai/gis-dasar/vector/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/lanjutan/vector/</loc>
+    <loc>/rspatial/book/lanjutan/vector/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/lanjutan/</loc>
+    <loc>/rspatial/book/lanjutan/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/memulai/gis-dasar/raster/</loc>
+    <loc>/rspatial/book/memulai/gis-dasar/raster/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/referensi/</loc>
+    <loc>/rspatial/book/referensi/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/creating-a-new-theme/</loc>
+    <loc>/rspatial/posts/creating-a-new-theme/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/migrate-from-jekyll/</loc>
+    <loc>/rspatial/posts/migrate-from-jekyll/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/memulai/gis-dasar/</loc>
+    <loc>/rspatial/book/memulai/gis-dasar/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/rspatial/categories/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>/rspatial/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/plot/</loc>
+    <loc>/rspatial/tags/plot/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/rspatial/post/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/R/</loc>
+    <loc>/rspatial/categories/R/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/R-Markdown/</loc>
+    <loc>/rspatial/tags/R-Markdown/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>/rspatial/tags/regression/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/rspatial/tags/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/goisforlovers/</loc>
+    <loc>/rspatial/posts/goisforlovers/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/Development/</loc>
+    <loc>/rspatial/categories/Development/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/development/</loc>
+    <loc>/rspatial/tags/development/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hugoisforlovers/</loc>
+    <loc>/rspatial/posts/hugoisforlovers/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
+    <loc>/rspatial/tags/go/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/golang/</loc>
+    <loc>/rspatial/categories/golang/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
+    <loc>/rspatial/tags/golang/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/rspatial/tags/hugo/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/templates/</loc>
+    <loc>/rspatial/tags/templates/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/themes/</loc>
+    <loc>/rspatial/tags/themes/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/lanjutan/vector/3rd-level/4th-level/</loc>
+    <loc>/rspatial/book/lanjutan/vector/3rd-level/4th-level/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/lanjutan/vector/3rd-level/</loc>
+    <loc>/rspatial/book/lanjutan/vector/3rd-level/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/book/</loc>
+    <loc>/rspatial/book/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <loc>/rspatial/</loc>
+    <lastmod>2020-03-15T16:41:38+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/rspatial/posts/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   
