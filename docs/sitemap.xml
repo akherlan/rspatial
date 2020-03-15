@@ -14,6 +14,11 @@
   
   <url>
     <loc>/rspatial/book/memulai/persiapan/rstudio/</loc>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/book/lanjutan/raster/</loc>
   </url>
   
   <url>
@@ -33,14 +38,17 @@
   
   <url>
     <loc>/rspatial/book/memulai/persiapan/qgis/</loc>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/referensi/</loc>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/kontribusi/</loc>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
@@ -50,36 +58,37 @@
   
   <url>
     <loc>/rspatial/book/memulai/persiapan/</loc>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/categories/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/posts/batas-plot-peta-locator/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/tags/peta/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/tags/plot/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/tags/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/categories/visualisasi/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
@@ -108,18 +117,24 @@
   </url>
   
   <url>
-    <loc>/rspatial/book/lanjutan/vector/3rd-level/4th-level/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <loc>/rspatial/book/lanjutan/raster/3rd-level/4th-level/</loc>
   </url>
   
   <url>
-    <loc>/rspatial/book/lanjutan/vector/3rd-level/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <loc>/rspatial/book/lanjutan/raster/3rd-level/</loc>
+  </url>
+  
+  <url>
+    <loc>/rspatial/book/lanjutan/vector/Vector-pada-R/4th-level/</loc>
+  </url>
+  
+  <url>
+    <loc>/rspatial/book/lanjutan/vector/Vector-pada-R/</loc>
   </url>
   
   <url>
     <loc>/rspatial/</loc>
-    <lastmod>2020-03-15T16:41:38+07:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
   <url>
@@ -128,7 +143,7 @@
   
   <url>
     <loc>/rspatial/posts/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
+    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
   
 </urlset>

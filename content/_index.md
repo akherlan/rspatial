@@ -19,7 +19,7 @@ Kamu perlu mempelajari dasar-dasar GIS pada bagian [**Memulai**](book/memulai/).
 
 ## Sudah paham dasar-dasar GIS?
 
-Bila kamu mereasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke bagian [**Lanjutan**](book/lanjutan/) karena di sana akan lebih menyenangkan! Kita akan mempelajari bagaimana R bisa kita gunakan untuk pengolahan dan analisis data spasial. Termasuk contoh-contoh sederhananya.
+Bila merasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke bagian [**Lanjutan**](book/lanjutan/) karena di sana akan lebih menyenangkan! Kita akan mempelajari bagaimana R bisa kita gunakan untuk pengolahan dan analisis data spasial. Termasuk contoh-contoh sederhananya.
 {{< /columns >}}
 
 {{< columns >}}

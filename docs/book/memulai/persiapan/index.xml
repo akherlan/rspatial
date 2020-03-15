@@ -15,9 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/persiapan/rstudio/</guid>
-      <description>R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
-Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
-Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+      <description>Mengenal R dan RStudio Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena nggak guna.
 Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya.</description>
     </item>
     
@@ -27,7 +27,10 @@ Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/persiapan/qgis/</guid>
-      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip; Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ini sangat direkomendasikan. Tapi belum tentu untuk para mahasiswa kantong rata.</description>
+      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip;
+Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ArcGIS desktop sangat direkomendasikan.
+Selain untuk destop, ArcGIS juga membuat piranti lunaknya agar dapat berjalan melalui internet (cloud service).
+Meskipun begitu, kali ini pokoknya kita tetap bahas QGIS dulu! Karena penulis juga belum punya ArcGIS-nya. Mudah-mudahan nanti menyusul kita pakai software yahuud ini.</description>
     </item>
     
   </channel>

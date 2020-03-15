@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
-Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
-Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+<meta name="description" content="Mengenal R dan RStudio Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena nggak guna.
 Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya."><meta property="og:title" content="R dan RStudio" />
-<meta property="og:description" content="R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
-Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
-Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+<meta property="og:description" content="Mengenal R dan RStudio Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena nggak guna.
 Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/rspatial/book/memulai/persiapan/rstudio/" />
-
+<meta property="article:modified_time" content="2020-03-15T21:37:28+07:00" />
 <title>R dan RStudio | Spatial with R</title>
 <link rel="icon" href="/rspatial/favicon.png" type="image/x-icon">
 
@@ -22,7 +22,7 @@ Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual S
 <link rel="stylesheet" href="/rspatial/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/rspatial/en.search.min.a3024b0e0048f31d69a3f4d5cfe0e73d4b8434139eb5740c1911c07ef49f696a.js" integrity="sha256-owJLDgBI8x1po/TVz&#43;DnPUuENBOetXQMGRHAfvSfaWo="></script>
+<script defer src="/rspatial/en.search.min.d1838b2c479ab14fde560e53b3f0b6095e492044c64b5222383649433818352f.js" integrity="sha256-0YOLLEeasU/eVg5Ts/C2CV5JIETGS1IiODZJQzgYNS8="></script>
 
 <!--
 Made with Book Theme
@@ -206,6 +206,29 @@ https://github.com/alex-shpak/hugo-book
     
 
   
+  <a href="/rspatial/book/lanjutan/raster/" class="collapsed ">Bekerja dengan Raster</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
   <a href="/rspatial/book/lanjutan/vector/" class="collapsed ">Bekerja dengan Vector</a>
   
 
@@ -311,12 +334,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#mengenal-r-dan-rstudio">Mengenal R dan RStudio</a>
       <ul>
-        <li><a href="#langkah-langkah-menginstall-r-dan-rstudio">Langkah-langkah menginstall R dan RStudio</a>
+        <li><a href="#langkah-langkah-menginstal-r-dan-rstudio">Langkah-langkah menginstal R dan RStudio</a>
           <ul>
-            <li><a href="#menginstall-r">Menginstall R</a></li>
-            <li><a href="#menginstall-rstudio">Menginstall RStudio</a></li>
+            <li><a href="#menginstal-r">Menginstal R</a></li>
+            <li><a href="#menginstal-rstudio">Menginstal RStudio</a></li>
           </ul>
         </li>
       </ul>
@@ -332,42 +355,60 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.</p>
-<p>Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).</p>
-<p>Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.</p>
-<p>Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya. Namun, penulis sangat merekomendasikan penggunaan RStudio karena kaya fitur dan sangat menunjang juga mempermudah pekerjaan yang menggunakan R sebagai alat bantunya.</p>
+  <article class="markdown"><h1 id="mengenal-r-dan-rstudio">Mengenal R dan RStudio</h1>
+<p>Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.</p>
+<p>Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).</p>
+<p>Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena <em>nggak guna</em>.</p>
+<p>Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya. Namun, penulis sangat merekomendasikan penggunaan RStudio karena kaya fitur dan sangat menunjang. Juga mempermudah pekerjaan yang menggunakan R sebagai alat bantunya.</p>
 <p>Berikut merupakan contoh yang paling kentara saat membandingkan R dengan RStudio.</p>
 <p>[Screenshot R console tanpa R-IDE]</p>
 <p>[Screenshot R console dengan R-IDE]</p>
-<h2 id="langkah-langkah-menginstall-r-dan-rstudio">Langkah-langkah menginstall R dan RStudio</h2>
+<h2 id="langkah-langkah-menginstal-r-dan-rstudio">Langkah-langkah menginstal R dan RStudio</h2>
 <blockquote class="book-hint info">
-  Jika mendapati kesalahan maupun mengalami kegagalan saat mengikuti langkah-langkah pada tutorial ini, mohon untuk menginformasikannya kepada penulis melalui <a href="https://t.me/akherlan">kontak</a> tertera.
+  <strong>Catatan:</strong> Jika mendapati kesalahan maupun mengalami kegagalan saat mengikuti langkah-langkah pada tutorial ini, mohon untuk menginformasikannya kepada penulis melalui <a href="https://t.me/akherlan">kontak</a> tertera.
 </blockquote>
 
-<h3 id="menginstall-r">Menginstall R</h3>
+<h3 id="menginstal-r">Menginstal R</h3>
 
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
-  <label for="tabs-uniqueid-0">Windows</label>
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-instalasi-r" id="tabs-instalasi-r-0" checked="checked" />
+  <label for="tabs-instalasi-r-0">Windows</label>
   <div class="book-tabs-content markdown-inner"><p><strong>Instalasi R pada sistem Windows</strong></p>
-<p>Seperti biasa, tinggal <em>next</em>, <em>next</em>, <em>next</em> saja sampai <em>finish</em>.</p>
-</div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
-  <label for="tabs-uniqueid-1">Linux</label>
+<p>Tentu kita perlu mengunduhnya terlebih dahulu.</p>
+<ol>
+<li>Unduh R versi terbaru untuk Windows melalui laman resmi <a href="https://cran.rstudio.com/bin/windows/base/">CRAN</a>.</li>
+<li>Kemudian seperti biasa, tinggal <em>next</em>, <em>next</em>, <em>next</em> saja sampai <em>finish</em>. biarkan tetap <em>default</em>.</li>
+<li>Selain itu, kamu juga perlu menginstal <em>tool</em> tambahan, yaitu <strong>RTools</strong>. Unduh <a href="https://cran.rstudio.com/bin/windows/Rtools/">dari sini</a>, pilih yang sesuai dengan versi R yang sebelumnya sudah kamu instal (atau sesuai rekomendasinya - <em>highlight</em> hijau).</li>
+<li>Instal RTools dengan <em>next</em>, <em>next</em>, <em>next</em>. Biarkan semua pilihan tetap <em>default</em>.</li>
+</ol>
+</div><input type="radio" class="hidden" name="tabs-instalasi-r" id="tabs-instalasi-r-1"  />
+  <label for="tabs-instalasi-r-1">Linux</label>
   <div class="book-tabs-content markdown-inner"><p><strong>Instalasi R pada sistem Linux Ubuntu, Mint, dan keluarga Debian</strong></p>
-<p>Untuk memperoleh versi R paling mutakhir kamu bisa menambahkan repository dari r-cran (air keran&hellip; eh).</p>
-<pre><code class="language-{bash}" data-lang="{bash}">sudo add-repository
-sudo apt update
+<p>Buka terminal/konsol, kemudian jalankan perintah:</p>
+<pre><code class="language-{bash}" data-lang="{bash}">sudo apt update
 sudo apt install r-base
-</code></pre></div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-2"  />
-  <label for="tabs-uniqueid-2">MacOS</label>
+</code></pre><p>Untuk memperoleh versi R paling mutakhir kamu bisa menambahkan <em>official repository</em> dari CRAN (Comprehensive R Archive Network).</p>
+<p>Pertama, tambahkan GPG key:</p>
+<pre><code class="language-{bash}" data-lang="{bash}">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+</code></pre><p>Lalu, baru kita bisa tambahkan repository CRAN:</p>
+<blockquote class="book-hint warning">
+  <strong>Perhatian!</strong>
+Ini untuk versi Ubuntu 18.04 (Bionic Beaver). Jika menggunakan versi lain, kamu bisa mengganti bagian <code>bionic-cran35</code> dengan versi yang sesuai pada <a href="https://cloud.r-project.org/bin/linux/ubuntu/">daftar ini</a>.
+</blockquote>
+<pre><code class="language-{bash}" data-lang="{bash}">sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+</code></pre><p>Kita perlu perbarui <em>cache</em> repo kita, kemudian instal R:</p>
+<pre><code class="language-{bash}" data-lang="{bash}">sudo apt update
+sudo apt install r-base
+</code></pre></div><input type="radio" class="hidden" name="tabs-instalasi-r" id="tabs-instalasi-r-2"  />
+  <label for="tabs-instalasi-r-2">MacOS</label>
   <div class="book-tabs-content markdown-inner"><p><strong>Instalasi R pada sistem MacOS</strong></p>
 <p>Menyusul, yaaa&hellip;</p>
 </div></div>
 
-<h3 id="menginstall-rstudio">Menginstall RStudio</h3>
-<p>Dalam konteks ini, kita sedang membicarakan RStudio untuk komputer destop (RStudio Desktop). Sebab, ada banyak produk-produk lain dari perusahaan RStudio yang digunakan untuk pengembangan.</p>
+<h3 id="menginstal-rstudio">Menginstal RStudio</h3>
+<p>Dalam konteks ini, kita sedang membicarakan RStudio untuk komputer destop (RStudio Desktop). Sebab, ada banyak produk-produk pengembangan lainnya dari perusahaan RStudio.</p>
 <p>Untuk mendapatkan paket program RStudio, kita dapat mengunjungi 
   <a href="https://rstudio.com/products/rstudio/download/#download">laman unduh resminya</a>. Kamu akan dihadapkan dengan banyak pilihan versi berdasarkan sistem operasi komputer. Pilih yang paling sesuai dengan komputermu. Kemudian teliti, apakah untuk arsitektur 32 bit atau 64 bit.</p>
 <p>Bila <em>installer</em> sudah tersedia kamu bisa melakukan instalasi dengan langkah-langkah seperti di bawah:</p>
@@ -375,22 +416,21 @@ sudo apt install r-base
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
-  <label for="tabs-uniqueid-0">Windows</label>
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-instalasi-rstudio" id="tabs-instalasi-rstudio-0" checked="checked" />
+  <label for="tabs-instalasi-rstudio-0">Windows</label>
   <div class="book-tabs-content markdown-inner"><strong>Instalasi pada sistem Windows</strong></p>
 <ol>
 <li>Klik ganda pada <em>installer</em> RStudio.</li>
 <li>Seperti biasa, tinggal <em>next</em>, <em>next</em>, <em>next</em>, sampai <em>finish</em>.</li>
-</ol></div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
-  <label for="tabs-uniqueid-1">Linux</label>
+</ol></div><input type="radio" class="hidden" name="tabs-instalasi-rstudio" id="tabs-instalasi-rstudio-1"  />
+  <label for="tabs-instalasi-rstudio-1">Linux</label>
   <div class="book-tabs-content markdown-inner"><p><strong>Instalasi pada sistem Linux Ubuntu, Mint, dan keluarga Debian</strong></p>
-<ol>
-<li>Pergi ke direktori tempat penyimpanan <em>installer</em> dengan ekstensi <code>*.deb</code> melalui terminal. Buka terminal/konsol kemudian ketikkan:</li>
-</ol>
+<p>Pergi ke direktori tempat penyimpanan <em>installer</em> dengan ekstensi <code>*.deb</code> melalui terminal.</p>
 <pre><code class="language-{bash}" data-lang="{bash}">cd &lt;direktori/tempat/installer/RStudio/berada&gt;
-sudo dpkg -i install &lt;nama/berkas/paket/rstudio.deb&gt;
-</code></pre></div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-2"  />
-  <label for="tabs-uniqueid-2">MacOS</label>
+</code></pre><p>Kemudian instal R:</p>
+<pre><code class="language-{bash}" data-lang="{bash}">sudo dpkg --install nama-paket-rstudio.deb
+</code></pre></div><input type="radio" class="hidden" name="tabs-instalasi-rstudio" id="tabs-instalasi-rstudio-2"  />
+  <label for="tabs-instalasi-rstudio-2">MacOS</label>
   <div class="book-tabs-content markdown-inner"><p><strong>Instalasi pada sistem Windows MacOS</strong></p>
 <p>Tidak semudah itu Ferguso&hellip; Menyusul, ya&hellip;</p>
 </div></div>
@@ -405,6 +445,14 @@ sudo dpkg -i install &lt;nama/berkas/paket/rstudio.deb&gt;
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/akherlan/rspatial/commit/60c398e245f1a2120184eea15766bd0ac16c5e28" title='Last modified by andi | 15 Mar 2020' target="_blank" rel="noopener">
+      <img src="/rspatial/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>15 Mar 2020</span>
+    </a>
+  </div>
 
 
 
@@ -433,12 +481,12 @@ sudo dpkg -i install &lt;nama/berkas/paket/rstudio.deb&gt;
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#mengenal-r-dan-rstudio">Mengenal R dan RStudio</a>
       <ul>
-        <li><a href="#langkah-langkah-menginstall-r-dan-rstudio">Langkah-langkah menginstall R dan RStudio</a>
+        <li><a href="#langkah-langkah-menginstal-r-dan-rstudio">Langkah-langkah menginstal R dan RStudio</a>
           <ul>
-            <li><a href="#menginstall-r">Menginstall R</a></li>
-            <li><a href="#menginstall-rstudio">Menginstall RStudio</a></li>
+            <li><a href="#menginstal-r">Menginstal R</a></li>
+            <li><a href="#menginstal-rstudio">Menginstal RStudio</a></li>
           </ul>
         </li>
       </ul>

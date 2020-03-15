@@ -3,9 +3,9 @@ title: Mengenal Raster
 weight: 2
 ---
 
-# At me ipso nepotibus nunc celebratior genus
+# Apa Itu Raster?
 
-## Tanto oblite
+## Bagian Ini Belum Siap, Akan Dipakai untuk Membahas Raster
 
 Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque
 illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro

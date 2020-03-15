@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/gis-dasar/vector/</guid>
-      <description>Caput vino delphine in tamen vias Cognita laeva illo fracta Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+      <description>Apa Itu Vector? Bagian ini akan membahas tentang vector Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
  Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
     </item>
     
@@ -25,9 +25,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/persiapan/rstudio/</guid>
-      <description>R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
-Pada intinya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio merupakan penunjang lingkungan kerjanya. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
-Kita bisa menjalankan R tanpa harus menginstall RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstall R.
+      <description>Mengenal R dan RStudio Sungguh, R dan RStudio merupakan program yang berbeda dengan fungsi yang berbeda.
+Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE (Integrated Development Environment).
+Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena nggak guna.
 Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual Studio for R, Jupyter Notebook, Rattle, Eclipse, dan lain sebagainya.</description>
     </item>
     
@@ -37,7 +37,7 @@ Sesungguhnya, ada banyak IDE untuk bahasa pemrograman R, misalnya RGUI, Visual S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/gis-dasar/raster/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus Tanto oblite Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
+      <description>Apa Itu Raster? Bagian Ini Belum Siap, Akan Dipakai untuk Membahas Raster Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
 Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
     </item>
     
@@ -47,7 +47,10 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/persiapan/qgis/</guid>
-      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip; Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ini sangat direkomendasikan. Tapi belum tentu untuk para mahasiswa kantong rata.</description>
+      <description>Mengapa Menggunakan QGIS, bukan ArcGIS? ArcGIS sangat keren! Tapi&amp;hellip;
+Kita perlu merogoh kantong yang dalam untuk fitur-fitur yang sebenarnya bisa dilakukan menggunakan QGIS. Untuk keperluan yang lebih advance tentu program ArcGIS desktop sangat direkomendasikan.
+Selain untuk destop, ArcGIS juga membuat piranti lunaknya agar dapat berjalan melalui internet (cloud service).
+Meskipun begitu, kali ini pokoknya kita tetap bahas QGIS dulu! Karena penulis juga belum punya ArcGIS-nya. Mudah-mudahan nanti menyusul kita pakai software yahuud ini.</description>
     </item>
     
     <item>
@@ -97,10 +100,19 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title></title>
-      <link>/rspatial/book/lanjutan/vector/3rd-level/4th-level/</link>
+      <link>/rspatial/book/lanjutan/raster/3rd-level/4th-level/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/rspatial/book/lanjutan/vector/3rd-level/4th-level/</guid>
+      <guid>/rspatial/book/lanjutan/raster/3rd-level/4th-level/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/rspatial/book/lanjutan/vector/Vector-pada-R/4th-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/lanjutan/vector/Vector-pada-R/4th-level/</guid>
       <description></description>
     </item>
     

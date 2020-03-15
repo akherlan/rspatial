@@ -2,9 +2,9 @@
 title: Mengenal Vector
 weight: 1
 ---
-# Caput vino delphine in tamen vias
+# Apa Itu Vector?
 
-## Cognita laeva illo fracta
+## Bagian ini akan membahas tentang vector
 
 Lorem markdownum pavent auras, surgit nunc cingentibus libet **Laomedonque que**
 est. Pastor [An](http://est.org/ire.aspx) arbor filia foedat, ne [fugit
