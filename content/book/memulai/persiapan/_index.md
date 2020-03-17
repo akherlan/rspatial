@@ -13,8 +13,8 @@ Materi tentang penggunaan QGIS sedang disusun dan akan menyusul diterbitkan. Aga
 
 Pada bagian ini akan kita kupas beberapa hal yang perlu diketahui tentang program-program GIS beserta cara instalasinya. Program-program itu diantaranya:
 
-1. R dengan lingkungan kerja RStudio
-2. QGIS dengan Python (_on going_)
+1. R dengan lingkungan kerja RStudio - [pelajari](rstudio)
+2. QGIS dengan Python (_on going_) - [pelajari](qgis)
 
 Selain keduanya, sesungguhnya sangat banyak program GIS yang beredar saat ini, misalnya produk ArcGIS dari Esri, juga GlobalMapper dari BlueMarbel, serta Surfer, Grapher, Strater, dan MapViewer dari GoldenSoftware. Belum lagi Autodesk yang tidak mau kalah mengintegrasikan program-programnya dengan konsep GIS. Termasuk juga produk-produk keluaran US Army Corps of Engineers (HEC-GeoRAS, HEC-GeoFDA, HEC-HMS, dan banyak sekali).
 

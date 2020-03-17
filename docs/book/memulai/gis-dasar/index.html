@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ubi loqui Mentem genus facietque salire tempus bracchia Lorem markdownum partu paterno Achillem. Habent amne generosi aderant ad pellem nec erat sustinet merces columque haec et, dixit minus nutrit accipiam subibis subdidit. Temeraria servatum agros qui sed fulva facta. Primum ultima, dedit, suo quisque linguae medentes fixo: tum petis.
-Rapit vocant si hunc siste adspice Ora precari Patraeque Neptunia, dixit Danae Cithaeron armaque maxima in nati Coniugis templis fluidove. Effugit usus nec ingreditur agmen ac manus conlato."><meta property="og:title" content="GIS Dasar" />
+<meta name="description" content="Pengenalan Geographic Information System (GIS) Istilah GIS dalam bahasa Indonesia adalah SIG (sistem informasi geografis). Tapi ngomongnya enak: GIS. Lanjut&hellip;
+Apa sebenarnya GIS itu? Pada kenyataannya, GIS sangatlah kompleks namun bukannya sulit untuk bisa kita pahami. Untuk memahami GIS kita perlu pemahaman tentang geografi dan keruangan (spasial), ilmu komputer, serta pemahaman tentang struktur data (bahkan basis data kalau perlu).
+Setelah itu barulah kita bisa menerapkannya pada masing-masing bidang seperti:
+ Memonitor dan pengelolaan sumber daya alam Eksplorasi pada industri tambang Perencanaan dan pengelolaan infrastruktur Investigasi keanekaragaman hayati atau biodiversitas Analisis epidemi penyakit pada bidang kesehatan Visualisasi data untuk jurnalisme  dan lain sebagainya&hellip;"><meta property="og:title" content="GIS Dasar" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/rspatial/book/memulai/gis-dasar/" />
@@ -17,7 +19,7 @@ Rapit vocant si hunc siste adspice Ora precari Patraeque Neptunia, dixit Danae C
 <link rel="stylesheet" href="/rspatial/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/rspatial/en.search.min.e235cbdf4a3c20fa00d2aea1c0e7816fb8f17b91e4a90708a6281e1271231b36.js" integrity="sha256-4jXL30o8IPoA0q6hwOeBb7jxe5HkqQcIpigeEnEjGzY="></script>
+<script defer src="/rspatial/en.search.min.b5a1173a6d1e790c81d0e377142067c032d02dd34bb6430d49880bf7d853ad75.js" integrity="sha256-taEXOm0eeQyB0ON3FCBnwDLQLdNLtkMNSYgL99hTrXU="></script>
 
 <link rel="alternate" type="application/rss+xml" href="/rspatial/book/memulai/gis-dasar/index.xml" title="Spatial with R" />
 <!--
@@ -117,6 +119,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/rspatial/book/memulai/gis-dasar/geodesi/" class="">Geodesi dan Pemetaan</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/rspatial/book/memulai/gis-dasar/vector/" class="">Mengenal Vector</a>
   
 
@@ -173,7 +185,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/rspatial/book/memulai/R-dasar/" class="collapsed ">Pemrograman R Dasar</a>
+  <a href="/rspatial/book/memulai/r-dasar/" class="collapsed ">Pemrograman R Dasar</a>
   
 
 
@@ -353,12 +365,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#ubi-loqui">Ubi loqui</a>
+    <li><a href="#pengenalan-geographic-information-system-gis">Pengenalan Geographic Information System (GIS)</a>
       <ul>
-        <li><a href="#mentem-genus-facietque-salire-tempus-bracchia">Mentem genus facietque salire tempus bracchia</a></li>
-        <li><a href="#rapit-vocant-si-hunc-siste-adspice">Rapit vocant si hunc siste adspice</a></li>
-        <li><a href="#locus-fuit-caecis">Locus fuit caecis</a></li>
-        <li><a href="#caesorum-illa-tu-sentit-micat-vestes-papyriferi">Caesorum illa tu sentit micat vestes papyriferi</a></li>
+        <li><a href="#apa-sebenarnya-gis-itu">Apa sebenarnya GIS itu?</a></li>
+        <li><a href="#apa-hubungan-gis-dengan-peta">Apa hubungan GIS dengan peta?</a></li>
+        <li><a href="#apa-hubungannya-gis-dengan-analisis">Apa hubungannya GIS dengan analisis?</a></li>
       </ul>
     </li>
   </ul>
@@ -372,54 +383,58 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="ubi-loqui">Ubi loqui</h1>
-<h2 id="mentem-genus-facietque-salire-tempus-bracchia">Mentem genus facietque salire tempus bracchia</h2>
-<p>Lorem markdownum partu paterno Achillem. Habent amne generosi aderant ad pellem
-nec erat sustinet merces columque haec et, dixit minus nutrit accipiam subibis
-subdidit. Temeraria servatum agros qui sed fulva facta. Primum ultima, dedit,
-suo quisque linguae medentes fixo: tum petis.</p>
-<h2 id="rapit-vocant-si-hunc-siste-adspice">Rapit vocant si hunc siste adspice</h2>
-<p>Ora precari Patraeque Neptunia, dixit Danae 
-  <a href="http://mersis-an.org/litoristum">Cithaeron
-armaque</a> maxima in <strong>nati Coniugis</strong> templis
-fluidove. Effugit usus nec ingreditur agmen <em>ac manus</em> conlato. Nullis vagis
-nequiquam vultibus aliquos altera <em>suum venis</em> teneas fretum. Armos 
-  <a href="http://tutum.io/me">remotis
-hoc</a> sine ferrea iuncta quam!</p>
-<h2 id="locus-fuit-caecis">Locus fuit caecis</h2>
-<p>Nefas discordemque domino montes numen tum humili nexilibusque exit, Iove. Quae
-miror esse, scelerisque Melaneus viribus. Miseri laurus. Hoc est proposita me
-ante aliquid, aura inponere candidioribus quidque accendit bella, sumpta.
-Intravit quam erat figentem hunc, motus de fontes parvo tempestate.</p>
-<pre><code>iscsi_virus = pitch(json_in_on(eupViral),
-        northbridge_services_troubleshooting, personal(
-        firmware_rw.trash_rw_crm.device(interactive_gopher_personal,
-        software, -1), megabit, ergonomicsSoftware(cmyk_usb_panel,
-        mips_whitelist_duplex, cpa)));
-if (5) {
-    managementNetwork += dma - boolean;
-    kilohertz_token = 2;
-    honeypot_affiliate_ergonomics = fiber;
-}
-mouseNorthbridge = byte(nybble_xmp_modem.horse_subnet(
-        analogThroughputService * graphicPoint, drop(daw_bit, dnsIntranet),
-        gateway_ospf), repository.domain_key.mouse(serverData(fileNetwork,
-        trim_duplex_file), cellTapeDirect, token_tooltip_mashup(
-        ripcordingMashup)));
-module_it = honeypot_driver(client_cold_dvr(593902, ripping_frequency) +
-        coreLog.joystick(componentUdpLink), windows_expansion_touchscreen);
-bashGigabit.external.reality(2, server_hardware_codec.flops.ebookSampling(
-        ciscNavigationBacklink, table + cleanDriver), indexProtocolIsp);
-</code></pre>
-<h2 id="caesorum-illa-tu-sentit-micat-vestes-papyriferi">Caesorum illa tu sentit micat vestes papyriferi</h2>
-<p>Inde aderam facti; Theseus vis de tauri illa peream. Oculos <strong>uberaque</strong> non
-regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;
-gestanda nitidi, vero? Dum ne pectoraque testantur.</p>
-<p>Venasque repulsa Samos qui, exspectatum eram animosque hinc, 
-  <a href="http://www.creveratnon.net/apricaaetheriis">aut
-manes</a>, Assyrii. Cupiens auctoribus
-pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae
-iusto! Sedes ante dum superest <strong>extrema</strong>.</p>
+  <article class="markdown"><h1 id="pengenalan-geographic-information-system-gis">Pengenalan Geographic Information System (GIS)</h1>
+<p>Istilah GIS dalam bahasa Indonesia adalah SIG (sistem informasi geografis). Tapi <em>ngomongnya</em> enak: GIS. Lanjut&hellip;</p>
+<h2 id="apa-sebenarnya-gis-itu">Apa sebenarnya GIS itu?</h2>
+<p>Pada kenyataannya, GIS sangatlah kompleks namun bukannya sulit untuk bisa kita pahami. Untuk memahami GIS kita perlu pemahaman tentang geografi dan keruangan (spasial), ilmu komputer, serta pemahaman tentang struktur data (bahkan basis data kalau perlu).</p>
+<p>Setelah itu barulah kita bisa menerapkannya pada masing-masing bidang seperti:</p>
+<ul>
+<li>Memonitor dan pengelolaan sumber daya alam</li>
+<li>Eksplorasi pada industri tambang</li>
+<li>Perencanaan dan pengelolaan infrastruktur</li>
+<li>Investigasi keanekaragaman hayati atau biodiversitas</li>
+<li>Analisis epidemi penyakit pada bidang kesehatan</li>
+<li>Visualisasi data untuk jurnalisme</li>
+</ul>
+<p>dan lain sebagainya&hellip;</p>
+<p>Kita bisa belajar dari 
+  <a href="https://id.wikipedia.org/wiki/Sistem_informasi_geografis">Wikipedia</a> kalau hanya ingin tahu apa pengertiannya. Tapi apakah dengan membaca tulisan di sana saja cukup?</p>
+<p>Justru bahasa Wikipedia itu pelik, saudara!</p>
+<p>Menurut ESRI<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> (Environtmental System Research Institute), secara ringkas, GIS merupakan kerangka kerja yang mengumpulkan, mengatur, dan menganalisis data.</p>
+<blockquote>
+<p><em>A geographic information system (GIS) is a framework for gathering, managing, and analyzing data.</em></p>
+</blockquote>
+<p>Jadi, <strong>GIS bukanlah sebuah cabang ilmu. Juga bukan nama sebuah aplikasi.</strong></p>
+<p>Istilah GIS sesungguhnya merujuk pada sistem kerja komputer yang menyediakan beragam informasi yang erat kaitannya dengan ruang di bumi. Masing-masing informasi dikelola dan disimpan pada sistem. Maka dinamakan sistem - informasi - geografi.</p>
+<p>Sistem ini punya kemampuan untuk membangun, menyimpan, mengelola dan menampilkan informasi yang merujuk pada lokasi tertentu pada suatu ruang (dalam hal ini tentu ruang di bumi kita).</p>
+<p>
+  <img src="http://www.bmbtrj.org/articles/2017/1/2/images/BiomedBiotechnolResJ_2017_1_2_94_219104_f4.jpg" alt="Kemampuan GIS" /> Sumber: 
+  <a href="http://www.bmbtrj.org/article.asp?issn=2588-9834;year=2017;volume=1;issue=2;spage=94;epage=100;aulast=Aghajani">BMBTRJ</a></p>
+<h2 id="apa-hubungan-gis-dengan-peta">Apa hubungan GIS dengan peta?</h2>
+<p>Peta hanyalah salah satu &ldquo;alat&rdquo; untuk menampilkan informasi pada sistem geografis selain, misalnya, visual 3D. Barang yang sebetulnya menjadi fokus adalah <strong>data</strong> atau <strong>informasi</strong>.</p>
+<p>ESRI juga memberi kita <em>insight</em> tentang GIS<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, yaitu:</p>
+<blockquote>
+<p><em>GIS lets us visualize, question, analyze, interpret, &amp; understand data to reveal relationships, patterns, &amp; trends.</em></p>
+</blockquote>
+<p>GIS memungkinkan kita untuk bisa membuat visualisasi, bertanya, menganalisis, menginterpretasikan, dan memahami data untuk mewujudkan hubungan, pola, dan tren.</p>
+<p>Jadi, <strong>peta adalah salah satu cara visualisasi informasi keruangan</strong>.</p>
+<p>Bicara tentang peta dalam GIS, maka kita bicara tentang kartografi dan geodesi. Untuk ini kita punya bagian bahasannya sendiri: 
+  <a href="/rspatial/book/memulai/gis-dasar/geodesi/">Geodesi dan Pemetaan</a>.</p>
+<h2 id="apa-hubungannya-gis-dengan-analisis">Apa hubungannya GIS dengan analisis?</h2>
+<p>Kita sedang susun strategi untuk membahas bagian ini.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Web belajar (sebenarnya upaya promo) dari ESRI: 
+  <a href="https://www.esri.com/en-us/what-is-gis/overview">What&rsquo;s GIS?</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Dari salah satu 
+  <a href="https://twitter.com/GISdotcom">akun Twitter</a> (cabang) milik ESRI yang membahas pengetahuan tentang GIS. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </article>
  
       
@@ -465,12 +480,11 @@ iusto! Sedes ante dum superest <strong>extrema</strong>.</p>
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#ubi-loqui">Ubi loqui</a>
+    <li><a href="#pengenalan-geographic-information-system-gis">Pengenalan Geographic Information System (GIS)</a>
       <ul>
-        <li><a href="#mentem-genus-facietque-salire-tempus-bracchia">Mentem genus facietque salire tempus bracchia</a></li>
-        <li><a href="#rapit-vocant-si-hunc-siste-adspice">Rapit vocant si hunc siste adspice</a></li>
-        <li><a href="#locus-fuit-caecis">Locus fuit caecis</a></li>
-        <li><a href="#caesorum-illa-tu-sentit-micat-vestes-papyriferi">Caesorum illa tu sentit micat vestes papyriferi</a></li>
+        <li><a href="#apa-sebenarnya-gis-itu">Apa sebenarnya GIS itu?</a></li>
+        <li><a href="#apa-hubungan-gis-dengan-peta">Apa hubungan GIS dengan peta?</a></li>
+        <li><a href="#apa-hubungannya-gis-dengan-analisis">Apa hubungannya GIS dengan analisis?</a></li>
       </ul>
     </li>
   </ul>

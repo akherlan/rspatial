@@ -4,57 +4,58 @@ title: GIS Dasar
 weight: 10
 ---
 
-# Ubi loqui
+# Pengenalan Geographic Information System (GIS)
 
-## Mentem genus facietque salire tempus bracchia
+Istilah GIS dalam bahasa Indonesia adalah SIG (sistem informasi geografis). Tapi _ngomongnya_ enak: GIS. Lanjut...
 
-Lorem markdownum partu paterno Achillem. Habent amne generosi aderant ad pellem
-nec erat sustinet merces columque haec et, dixit minus nutrit accipiam subibis
-subdidit. Temeraria servatum agros qui sed fulva facta. Primum ultima, dedit,
-suo quisque linguae medentes fixo: tum petis.
+## Apa sebenarnya GIS itu?
 
-## Rapit vocant si hunc siste adspice
+Pada kenyataannya, GIS sangatlah kompleks namun bukannya sulit untuk bisa kita pahami. Untuk memahami GIS kita perlu pemahaman tentang geografi dan keruangan (spasial), ilmu komputer, serta pemahaman tentang struktur data (bahkan basis data kalau perlu).
 
-Ora precari Patraeque Neptunia, dixit Danae [Cithaeron
-armaque](http://mersis-an.org/litoristum) maxima in **nati Coniugis** templis
-fluidove. Effugit usus nec ingreditur agmen *ac manus* conlato. Nullis vagis
-nequiquam vultibus aliquos altera *suum venis* teneas fretum. Armos [remotis
-hoc](http://tutum.io/me) sine ferrea iuncta quam!
+Setelah itu barulah kita bisa menerapkannya pada masing-masing bidang seperti:
 
-## Locus fuit caecis
+- Memonitor dan pengelolaan sumber daya alam
+- Eksplorasi pada industri tambang
+- Perencanaan dan pengelolaan infrastruktur
+- Investigasi keanekaragaman hayati atau biodiversitas
+- Analisis epidemi penyakit pada bidang kesehatan
+- Visualisasi data untuk jurnalisme
 
-Nefas discordemque domino montes numen tum humili nexilibusque exit, Iove. Quae
-miror esse, scelerisque Melaneus viribus. Miseri laurus. Hoc est proposita me
-ante aliquid, aura inponere candidioribus quidque accendit bella, sumpta.
-Intravit quam erat figentem hunc, motus de fontes parvo tempestate.
+dan lain sebagainya...
 
-    iscsi_virus = pitch(json_in_on(eupViral),
-            northbridge_services_troubleshooting, personal(
-            firmware_rw.trash_rw_crm.device(interactive_gopher_personal,
-            software, -1), megabit, ergonomicsSoftware(cmyk_usb_panel,
-            mips_whitelist_duplex, cpa)));
-    if (5) {
-        managementNetwork += dma - boolean;
-        kilohertz_token = 2;
-        honeypot_affiliate_ergonomics = fiber;
-    }
-    mouseNorthbridge = byte(nybble_xmp_modem.horse_subnet(
-            analogThroughputService * graphicPoint, drop(daw_bit, dnsIntranet),
-            gateway_ospf), repository.domain_key.mouse(serverData(fileNetwork,
-            trim_duplex_file), cellTapeDirect, token_tooltip_mashup(
-            ripcordingMashup)));
-    module_it = honeypot_driver(client_cold_dvr(593902, ripping_frequency) +
-            coreLog.joystick(componentUdpLink), windows_expansion_touchscreen);
-    bashGigabit.external.reality(2, server_hardware_codec.flops.ebookSampling(
-            ciscNavigationBacklink, table + cleanDriver), indexProtocolIsp);
+Kita bisa belajar dari [Wikipedia](https://id.wikipedia.org/wiki/Sistem_informasi_geografis) kalau hanya ingin tahu apa pengertiannya. Tapi apakah dengan membaca tulisan di sana saja cukup?
 
-## Caesorum illa tu sentit micat vestes papyriferi
+Justru bahasa Wikipedia itu pelik, saudara!
 
-Inde aderam facti; Theseus vis de tauri illa peream. Oculos **uberaque** non
-regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;
-gestanda nitidi, vero? Dum ne pectoraque testantur.
+Menurut ESRI[^1] (Environtmental System Research Institute), secara ringkas, GIS merupakan kerangka kerja yang mengumpulkan, mengatur, dan menganalisis data.
 
-Venasque repulsa Samos qui, exspectatum eram animosque hinc, [aut
-manes](http://www.creveratnon.net/apricaaetheriis), Assyrii. Cupiens auctoribus
-pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae
-iusto! Sedes ante dum superest **extrema**.
+> _A geographic information system (GIS) is a framework for gathering, managing, and analyzing data._
+
+Jadi, **GIS bukanlah sebuah cabang ilmu. Juga bukan nama sebuah aplikasi.**
+
+Istilah GIS sesungguhnya merujuk pada sistem kerja komputer yang menyediakan beragam informasi yang erat kaitannya dengan ruang di bumi. Masing-masing informasi dikelola dan disimpan pada sistem. Maka dinamakan sistem - informasi - geografi.
+
+Sistem ini punya kemampuan untuk membangun, menyimpan, mengelola dan menampilkan informasi yang merujuk pada lokasi tertentu pada suatu ruang (dalam hal ini tentu ruang di bumi kita).
+
+![Kemampuan GIS](http://www.bmbtrj.org/articles/2017/1/2/images/BiomedBiotechnolResJ_2017_1_2_94_219104_f4.jpg) Sumber: [BMBTRJ](http://www.bmbtrj.org/article.asp?issn=2588-9834;year=2017;volume=1;issue=2;spage=94;epage=100;aulast=Aghajani)
+
+## Apa hubungan GIS dengan peta?
+
+Peta hanyalah salah satu "alat" untuk menampilkan informasi pada sistem geografis selain, misalnya, visual 3D. Barang yang sebetulnya menjadi fokus adalah **data** atau **informasi**. 
+
+ESRI juga memberi kita _insight_ tentang GIS[^2], yaitu:
+
+> _GIS lets us visualize, question, analyze, interpret, & understand data to reveal relationships, patterns, & trends._
+
+GIS memungkinkan kita untuk bisa membuat visualisasi, bertanya, menganalisis, menginterpretasikan, dan memahami data untuk mewujudkan hubungan, pola, dan tren.
+
+Jadi, **peta adalah salah satu cara visualisasi informasi keruangan**.
+
+Bicara tentang peta dalam GIS, maka kita bicara tentang kartografi dan geodesi. Untuk ini kita punya bagian bahasannya sendiri: [Geodesi dan Pemetaan](geodesi).
+
+## Apa hubungannya GIS dengan analisis?
+
+Kita sedang susun strategi untuk membahas bagian ini.
+
+[^1]: Web belajar (sebenarnya upaya promo) dari ESRI: [What's GIS?](https://www.esri.com/en-us/what-is-gis/overview).
+[^2]: Dari salah satu [akun Twitter](https://twitter.com/GISdotcom) (cabang) milik ESRI yang membahas pengetahuan tentang GIS.

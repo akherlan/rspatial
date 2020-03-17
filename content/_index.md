@@ -28,15 +28,31 @@ Bila merasa sudah cukup memahami dasar-dasar GIS, kamu bisa langsung loncat ke b
 {{< button relref="book/lanjutan" class="materi" >}}Tahap Lanjutan{{< /button >}}
 {{< /columns >}}
 
+## Biasa mempelajari hal secara runut?
+
+Untuk kamu yang orangnya terbiasa dengan cara-cara terstruktur, kami sedang menyiapkan indeks peta materi. Saat ini kamu bisa mengikuti alur sesuai susunan menu di pojok kiri atas (akses melalui ponsel) atau bilah kiri laman web (akses dari laptop). Juga menggunakan daftar isi di bagian pojok kanan atas (akses melalui ponsel) atau bilah bagian kanan (akses melalui laptop) pada masing-masing laman.
+
+{{< columns >}}
+## Ingin memahami cara menggunakan bahasa R?
+
+Ini tidak sesulit yang kamu bayangkan! Kita hanya perlu perbanyak berlatih, praktik langsung, dan komitmen. Boleh coba ke bagian [**Pemrograman R Dasar**](book/memulai/r-dasar) jika penasaran.
+
+<--->
+
+## Ingin praktik R langsung menggunakan data spasial?
+
+Jika kamu ingin berkreasi, [**Vinyet**](posts) adalah bagian yang cocok untuk kamu jelajahi. Karena _practice make perfect_, meskipun hidup tak semudah tutorial.
+{{< /columns >}}
+
+{{< columns >}}
+{{< button relref="book/memulai/r-dasar" class="materi" >}}Mulai dari R{{< /button >}}
+<--->
+{{< button relref="posts" class="materi" >}}Jelajahi Tutorial{{< /button >}}
+{{< /columns >}}
+
 ## Cari informasi berdasarkan istilah
 
 Jika kamu ingin mempelajari sesuatu yang kamu tahu istilahnya tapi butuh informasi lebih tentang itu, bisa dengan menggunakan kolom pencarian yang berada di dalam menu di pojok kiri atas (akses melalui ponsel) atau pada bilah bagian kiri (akses melalui laptop).
-
-## Paham dasar-dasar R dan ingin praktik menggunakan data spasial?
-
-Jika kamu ingin berkreasi, [**Vinyet**](posts) adalah bagian yang cocok untuk kamu jelajahi.
-
-{{< button relref="posts" class="materi" >}}Jelajahi Tutorial{{< /button >}}
 
 # Disclaimer!
 

@@ -10,6 +10,7 @@ weight: 2
 
 Kami telah mengumpulkan berbagai sumber yang bisa kita gunakan untuk memperkaya pengetahuan, juga meningkatkan kecakapan kita dalam melakukan analisis spasial dan menggunakan program komputer GIS.
 
+- **Analysis of Spatial Data** - Roger Bivand (CRAN) | _gratis_ | [artikel (EN)](https://cran.r-project.org/web/views/Spatial.html)
 - **Geocomputational with R** - Lovelace, Nowosad, & Muenchow | _gratis_ | [buku online (EN)](https://geocompr.robinlovelace.net/)
 - **Introduction to GIS with R** - Jesse Sadler | _gratis_ | [artikel (EN)](https://www.jessesadler.com/post/gis-with-r-intro/)
 - **Simple Feature for R** - Edzer Pebesma | _gratis_ | [dokumentasi (EN)](https://r-spatial.github.io/sf/)
