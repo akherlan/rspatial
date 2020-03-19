@@ -15,8 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/gis-dasar/geodesi/</guid>
-      <description>Konsep dalam Geodesi dan Pemetaan Nanti kita akan dihadapkan pada beberapa fitur dari aplikasi GIS yang berkaitan dengan konsep dalam geodesi dan pemetaan, diantaranya:
- proyeksi dan datum sistem referensi koordinat  Dua itu, sich yang paling utama. Nanti kita jabarkan dan mutakhirkan bahasan tentang ini. Stay tune!</description>
+      <description>Konsep dalam Geodesi dan Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi.
+Tiga sifat fundamental bumi1 adalah:
+ bentuk orientasi dalam ruang medan gravitasi  Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan.</description>
     </item>
     
     <item>
@@ -69,7 +70,7 @@ Meskipun begitu, kali ini pokoknya kita tetap akan membahas QGIS dulu! Karena pe
       
       <guid>/rspatial/referensi/</guid>
       <description>Daftar Sumber Belajar Kami telah mengumpulkan berbagai sumber yang bisa kita gunakan untuk memperkaya pengetahuan, juga meningkatkan kecakapan kita dalam melakukan analisis spasial dan menggunakan program komputer GIS.
- Analysis of Spatial Data - Roger Bivand (CRAN) | gratis | artikel (EN) Geocomputational with R - Lovelace, Nowosad, &amp;amp; Muenchow | gratis | buku online (EN) Introduction to GIS with R - Jesse Sadler | gratis | artikel (EN) Simple Feature for R - Edzer Pebesma | gratis | dokumentasi (EN) Tidy spatial data in R: using dplyr, tidyr, and ggplot2 with sf - Matt Strimas-Mackey | gratis | artikel (EN) Zooming-in on Maps with sf and ggplot2 - Markus Konrad | gratis | artikel (EN) Geographic Data and Python - Pauline Chow | gratis | presentasi (EN)   </description>
+ Analysis of Spatial Data - Roger Bivand (CRAN) | gratis | artikel (EN) Geocomputational with R - Lovelace, Nowosad, &amp;amp; Muenchow | gratis | buku online (EN) r-spatial | gratis | weblog (EN) Introduction to GIS with R - Jesse Sadler | gratis | artikel (EN) Simple Feature for R - Edzer Pebesma | gratis | dokumentasi (EN) Tidy spatial data in R: using dplyr, tidyr, and ggplot2 with sf - Matt Strimas-Mackey | gratis | artikel (EN) Zooming-in on Maps with sf and ggplot2 - Markus Konrad | gratis | artikel (EN) Geographic Data and Python - Pauline Chow | gratis | presentasi (EN)   </description>
     </item>
     
     <item>

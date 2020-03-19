@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Konsep dalam Geodesi dan Pemetaan Nanti kita akan dihadapkan pada beberapa fitur dari aplikasi GIS yang berkaitan dengan konsep dalam geodesi dan pemetaan, diantaranya:
- proyeksi dan datum sistem referensi koordinat  Dua itu, sich yang paling utama. Nanti kita jabarkan dan mutakhirkan bahasan tentang ini. Stay tune!"><meta property="og:title" content="Geodesi dan Pemetaan" />
-<meta property="og:description" content="Konsep dalam Geodesi dan Pemetaan Nanti kita akan dihadapkan pada beberapa fitur dari aplikasi GIS yang berkaitan dengan konsep dalam geodesi dan pemetaan, diantaranya:
- proyeksi dan datum sistem referensi koordinat  Dua itu, sich yang paling utama. Nanti kita jabarkan dan mutakhirkan bahasan tentang ini. Stay tune!" />
+<meta name="description" content="Konsep dalam Geodesi dan Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi.
+Tiga sifat fundamental bumi1 adalah:
+ bentuk orientasi dalam ruang medan gravitasi  Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan."><meta property="og:title" content="Geodesi dan Pemetaan" />
+<meta property="og:description" content="Konsep dalam Geodesi dan Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi.
+Tiga sifat fundamental bumi1 adalah:
+ bentuk orientasi dalam ruang medan gravitasi  Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/rspatial/book/memulai/gis-dasar/geodesi/" />
-
+<meta property="article:modified_time" content="2020-03-18T01:01:09+07:00" />
 <title>Geodesi dan Pemetaan | Spatial with R</title>
 <link rel="icon" href="/rspatial/favicon.png" type="image/x-icon">
 
@@ -18,7 +20,7 @@
 <link rel="stylesheet" href="/rspatial/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/rspatial/en.search.min.b5a1173a6d1e790c81d0e377142067c032d02dd34bb6430d49880bf7d853ad75.js" integrity="sha256-taEXOm0eeQyB0ON3FCBnwDLQLdNLtkMNSYgL99hTrXU="></script>
+<script defer src="/rspatial/en.search.min.3dbd45fd9666fbac6b8f92a232d8131f9a4e49fafaf1db5167f6251c742df1db.js" integrity="sha256-Pb1F/ZZm&#43;6xrj5KiMtgTH5pOSfr68dtRZ/YlHHQt8ds="></script>
 
 <!--
 Made with Book Theme
@@ -363,7 +365,17 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#konsep-dalam-geodesi-dan-pemetaan">Konsep dalam Geodesi dan Pemetaan</a></li>
+    <li><a href="#konsep-dalam-geodesi-dan-pemetaan">Konsep dalam Geodesi dan Pemetaan</a>
+      <ul>
+        <li><a href="#proyeksi-peta-_map--projection_">Proyeksi peta (map  projection)</a></li>
+        <li><a href="#sistem-referensi-koordinat-_coordinate-references-system_--crs">Sistem referensi koordinat (coordinate references system / CRS)</a>
+          <ul>
+            <li><a href="#crs-lokal">CRS Lokal</a></li>
+            <li><a href="#crs-global">CRS Global</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -376,12 +388,37 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="konsep-dalam-geodesi-dan-pemetaan">Konsep dalam Geodesi dan Pemetaan</h1>
-<p>Nanti kita akan dihadapkan pada beberapa fitur dari aplikasi GIS yang berkaitan dengan konsep dalam geodesi dan pemetaan, diantaranya:</p>
+<p>Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (<em>positioning</em>) desain di atas muka bumi.</p>
+<p>Tiga sifat fundamental bumi<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> adalah:</p>
 <ul>
-<li>proyeksi dan datum</li>
-<li>sistem referensi koordinat</li>
+<li>bentuk</li>
+<li>orientasi dalam ruang</li>
+<li>medan gravitasi</li>
 </ul>
-<p>Dua itu, <em>sich</em> yang paling utama. Nanti kita jabarkan dan mutakhirkan bahasan tentang ini. <em>Stay tune!</em></p>
+<p>Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan.</p>
+<p>[Sedang mencoba untuk menyelipkan pemahaman tentang: ellipsoid, geoid. Karena akan nyambung dengan pembahasan datum, CRS, juga nantinya data DEM]</p>
+<p>Apabila kita bawa dasar-dasar ini ke dalam konteks komputer, maka kita akan bertemu dengan berbagai istilah pemetaan, misalnya: <strong>proyeksi</strong>, <strong>datum</strong>, dan <strong>sistem koordinat</strong>.</p>
+<h2 id="proyeksi-peta-_map--projection_">Proyeksi peta (<em>map  projection</em>)</h2>
+<p>Pada prosesnya, proyeksi memaksakan permukaan bola menjadi bidang datar atau benda rata. Di SMP atau SMA dulu tentu pernah mempelajari bagaimana sebuah garis yang memiliki sudut di proyeksikan sehingga sejajar dengan sumbu X atau sumbu Y kartesian.</p>
+<p>[contoh gambar proyeksi garis]</p>
+<p>Sekarang, kita coba implementasikan cara-cara itu. Dari bangun ruang (bola bumi) ke bangun ruang lain, sehingga membuat kita jadi lebih mudah mengupasnya. Contoh: proyeksikan pada tabung atau kerucut. Atau bahkan langsung ke bidang datar.</p>
+<p>
+  <img src="https://raw.githubusercontent.com/akherlan/idjn-rspatial/master/assets/projections.png" alt="" />
+Sumber: 
+  <a href="https://gistbok.ucgis.org/bok-topics/2018-quarter-02/map-projections">Proyeksi peta</a></p>
+<h2 id="sistem-referensi-koordinat-_coordinate-references-system_--crs">Sistem referensi koordinat (<em>coordinate references system</em> / CRS)</h2>
+<p>Sesungguhnya, koordinat adalah sebuah alamat. Jika suatu desa dialamatkan dengan sebuah nama, koordinat dialamatkan melalui hitungan jarak dari suatu patokan.</p>
+<h3 id="crs-lokal">CRS Lokal</h3>
+<h3 id="crs-global">CRS Global</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Pembahasan geodesi oleh NOAA: 
+  <a href="https://oceanservice.noaa.gov/facts/geodesy.html"><em>What is geodesy?</em></a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </article>
  
       
@@ -391,6 +428,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/akherlan/rspatial/commit/c07445d3d89113d0364fef114448b569bc5517d4" title='Last modified by andi | 18 Mar 2020' target="_blank" rel="noopener">
+      <img src="/rspatial/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>18 Mar 2020</span>
+    </a>
+  </div>
 
 
 
@@ -419,7 +464,17 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#konsep-dalam-geodesi-dan-pemetaan">Konsep dalam Geodesi dan Pemetaan</a></li>
+    <li><a href="#konsep-dalam-geodesi-dan-pemetaan">Konsep dalam Geodesi dan Pemetaan</a>
+      <ul>
+        <li><a href="#proyeksi-peta-_map--projection_">Proyeksi peta (map  projection)</a></li>
+        <li><a href="#sistem-referensi-koordinat-_coordinate-references-system_--crs">Sistem referensi koordinat (coordinate references system / CRS)</a>
+          <ul>
+            <li><a href="#crs-lokal">CRS Lokal</a></li>
+            <li><a href="#crs-global">CRS Global</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
