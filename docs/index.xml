@@ -10,23 +10,33 @@
     
     
     <item>
-      <title>Geodesi dan Pemetaan</title>
-      <link>/rspatial/book/memulai/gis-dasar/geodesi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/book/memulai/gis-dasar/geodesi/</guid>
-      <description>Konsep dalam Geodesi dan Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi.
-Tiga sifat fundamental bumi1 adalah:
- bentuk orientasi dalam ruang medan gravitasi  Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan.</description>
-    </item>
-    
-    <item>
       <title>Operator</title>
       <link>/rspatial/book/memulai/r-dasar/operator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/r-dasar/operator/</guid>
       <description>Mengenal Operator pada R  </description>
+    </item>
+    
+    <item>
+      <title>Peta Situs</title>
+      <link>/rspatial/peta-situs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/peta-situs/</guid>
+      <description>Daftar Konten Web  Memulai   GIS Dasar  Proyeksi, Datum, CRS Struktur Data GIS GIS untuk Teknik Sipil   Persiapan Program  R dan RStudio QGIS - Gratis dan Powerfull   Pemrograman R Dasar  Operator Struktur Data    Lanjutan   Bekerja dengan Vector Bekerja dengan Raster Modifikasi Data Spasial   </description>
+    </item>
+    
+    <item>
+      <title>Proyeksi, Datum, CRS</title>
+      <link>/rspatial/book/memulai/gis-dasar/geodesi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/gis-dasar/geodesi/</guid>
+      <description>Prinsip Dasar Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi.
+Hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi. Apalagi pada desain infrastruktur yang mengular seperti jalan dan saluran. Yang tinggi berlapis-lapis sampai langit, juga sama.
+Tiga sifat fundamental bumi1 adalah:
+ bentuk (shape) orientasi dalam ruang (orientation in space) medan gravitasi (gravity field)  Terutama dua dari ketiganya merupakan pokok bahasan dalam ilmu ukur tanah dan geodesi, yang jadi pegangan para surveyor, yakni bentuk dan orientasi bumi dalam ruang.</description>
     </item>
     
     <item>
@@ -39,16 +49,6 @@ Tiga sifat fundamental bumi1 adalah:
 Pada dasarnya, R-lah yang kita gunakan untuk membantu pekerjaan kita. Sedangkan RStudio sangat membantu menunjang lingkungan kerja kita. R merupakan bahasa pemrograman, dengan RStudio sebagai IDE-nya (Integrated Development Environment).
 Kita bisa menjalankan R tanpa harus menginstal RStudio. Namun kita tidak bisa hanya menggunakan RStudio saja tanpa menginstal R, karena nggak guna.
 Adakah IDE lain selain RStudio?</description>
-    </item>
-    
-    <item>
-      <title>Mengenal Vector</title>
-      <link>/rspatial/book/memulai/gis-dasar/vector/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/book/memulai/gis-dasar/vector/</guid>
-      <description>Apa Itu Vector? Bagian ini akan membahas tentang vektor Ashiyaaap!
- </description>
     </item>
     
     <item>
@@ -83,6 +83,25 @@ Meskipun begitu, kali ini pokoknya kita tetap akan membahas QGIS dulu! Karena pe
     </item>
     
     <item>
+      <title>Struktur Data GIS</title>
+      <link>/rspatial/book/memulai/gis-dasar/data-gis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/gis-dasar/data-gis/</guid>
+      <description> Apa Itu Vector?  Feature geometry Attribute table Format vector  shp geojson kml/kmz, dll.     Apa Itu Raster?  Grid Format raster  grd tiff dan png netcdf, dll.     Apa Itu Mesh?   </description>
+    </item>
+    
+    <item>
+      <title>GIS untuk Teknik Sipil</title>
+      <link>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</guid>
+      <description>Membahas penerapan GIS untuk industri teknik sipil.
+ </description>
+    </item>
+    
+    <item>
       <title>Kontribusi</title>
       <link>/rspatial/kontribusi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -92,16 +111,6 @@ Meskipun begitu, kali ini pokoknya kita tetap akan membahas QGIS dulu! Karena pe
 Kode sumber untuk laman web ini tersedia di repo Github-nya.
 Untuk informasi lebih lanjut bisa kontak ke maintener saat ini ( Andi ).
 Donasi Kami juga menerima donasi untuk kelancaran proyek ini.
- </description>
-    </item>
-    
-    <item>
-      <title>Mengenal Raster</title>
-      <link>/rspatial/book/memulai/gis-dasar/raster/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/book/memulai/gis-dasar/raster/</guid>
-      <description>Apa Itu Raster? Bagian Ini Belum Siap, Akan Dipakai untuk Membahas Raster Ashiyaaap!
  </description>
     </item>
     

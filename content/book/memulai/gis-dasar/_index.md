@@ -51,7 +51,7 @@ GIS memungkinkan kita untuk bisa membuat visualisasi, bertanya, menganalisis, me
 
 Jadi, **peta adalah salah satu cara visualisasi informasi keruangan**.
 
-Bicara tentang peta dalam GIS, maka kita bicara tentang kartografi dan geodesi. Untuk ini kita punya bagian bahasannya sendiri: [Geodesi dan Pemetaan](geodesi).
+Bicara tentang peta dalam GIS, maka kita bicara tentang kartografi dan geodesi. Untuk ini kita punya bagian bahasannya sendiri: [Datum, Proyeksi, CRS](geodesi).
 
 ## Apa hubungannya GIS dengan analisis?
 

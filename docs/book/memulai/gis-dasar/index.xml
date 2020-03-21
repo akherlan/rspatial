@@ -10,33 +10,33 @@
     
     
     <item>
-      <title>Geodesi dan Pemetaan</title>
+      <title>Proyeksi, Datum, CRS</title>
       <link>/rspatial/book/memulai/gis-dasar/geodesi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/book/memulai/gis-dasar/geodesi/</guid>
-      <description>Konsep dalam Geodesi dan Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi. Karena, hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi.
+      <description>Prinsip Dasar Pemetaan Untuk dapat mengimplementasikan ide bangunan, mau tidak mau, teknisi sipil memerlukan ilmu geodesi.
+Hasil karya teknik sipil erat kaitannya dengan meletakkan (positioning) desain di atas muka bumi. Apalagi pada desain infrastruktur yang mengular seperti jalan dan saluran. Yang tinggi berlapis-lapis sampai langit, juga sama.
 Tiga sifat fundamental bumi1 adalah:
- bentuk orientasi dalam ruang medan gravitasi  Ketiganya merupakan pokok bahasan dalam ilmu ukur tanah atau geodesi, pegangan para surveyor. Kalau kita mulai bahas tentang ini, barangkali akan sangat teknis dan erat kaitannya dengan implementasi dan praktik di lapangan.</description>
+ bentuk (shape) orientasi dalam ruang (orientation in space) medan gravitasi (gravity field)  Terutama dua dari ketiganya merupakan pokok bahasan dalam ilmu ukur tanah dan geodesi, yang jadi pegangan para surveyor, yakni bentuk dan orientasi bumi dalam ruang.</description>
     </item>
     
     <item>
-      <title>Mengenal Vector</title>
-      <link>/rspatial/book/memulai/gis-dasar/vector/</link>
+      <title>Struktur Data GIS</title>
+      <link>/rspatial/book/memulai/gis-dasar/data-gis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/rspatial/book/memulai/gis-dasar/vector/</guid>
-      <description>Apa Itu Vector? Bagian ini akan membahas tentang vektor Ashiyaaap!
- </description>
+      <guid>/rspatial/book/memulai/gis-dasar/data-gis/</guid>
+      <description> Apa Itu Vector?  Feature geometry Attribute table Format vector  shp geojson kml/kmz, dll.     Apa Itu Raster?  Grid Format raster  grd tiff dan png netcdf, dll.     Apa Itu Mesh?   </description>
     </item>
     
     <item>
-      <title>Mengenal Raster</title>
-      <link>/rspatial/book/memulai/gis-dasar/raster/</link>
+      <title>GIS untuk Teknik Sipil</title>
+      <link>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/rspatial/book/memulai/gis-dasar/raster/</guid>
-      <description>Apa Itu Raster? Bagian Ini Belum Siap, Akan Dipakai untuk Membahas Raster Ashiyaaap!
+      <guid>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</guid>
+      <description>Membahas penerapan GIS untuk industri teknik sipil.
  </description>
     </item>
     
