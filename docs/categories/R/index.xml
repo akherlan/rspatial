@@ -5,10 +5,21 @@
     <link>/rspatial/categories/R/</link>
     <description>Recent content in R on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/rspatial/categories/R/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Transportasi Transit dengan GTFS</title>
+      <link>/rspatial/posts/transportasi-transit/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/posts/transportasi-transit/</guid>
+      <description>General Transit Feed Specification (GTFS) mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (stops), rute angkutan (routes), perjalanan/pergerakan (trips), titik transit (transfer) jadwal perjalanan (timetables), waktu lainnya (stop times, calendar, calendar dates), tentang pengelola (agency), dan lain sebagainya.
+Format data menggunakan bentuk berkas teks dengan pemisah koma (csv) yang dibundel menjadi arsip zip.
+Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface).</description>
+    </item>
     
     <item>
       <title>Hello R Markdown</title>

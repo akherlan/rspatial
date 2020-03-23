@@ -19,11 +19,12 @@
   
   <url>
     <loc>/rspatial/peta-situs/</loc>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/book/memulai/gis-dasar/geodesi/</loc>
-    <lastmod>2020-03-19T07:35:55+07:00</lastmod>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
@@ -58,10 +59,12 @@
   
   <url>
     <loc>/rspatial/book/memulai/gis-dasar/data-gis/</loc>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</loc>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
@@ -71,11 +74,12 @@
   
   <url>
     <loc>/rspatial/book/lanjutan/modifikasi/</loc>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
     <loc>/rspatial/book/memulai/gis-dasar/</loc>
-    <lastmod>2020-03-18T01:01:09+07:00</lastmod>
+    <lastmod>2020-03-21T16:35:21+07:00</lastmod>
   </url>
   
   <url>
@@ -89,8 +93,38 @@
   </url>
   
   <url>
+    <loc>/rspatial/tags/analisis/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/rspatial/categories/</loc>
-    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/categories/R/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/tags/sumber/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/tags/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/categories/transportasi/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/rspatial/posts/transportasi-transit/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -109,11 +143,6 @@
   </url>
   
   <url>
-    <loc>/rspatial/tags/</loc>
-    <lastmod>2020-03-15T21:37:28+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/rspatial/categories/visualisasi/</loc>
     <lastmod>2020-03-15T21:37:28+07:00</lastmod>
   </url>
@@ -125,11 +154,6 @@
   
   <url>
     <loc>/rspatial/post/</loc>
-    <lastmod>2020-03-15T16:29:26+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/rspatial/categories/R/</loc>
     <lastmod>2020-03-15T16:29:26+07:00</lastmod>
   </url>
   

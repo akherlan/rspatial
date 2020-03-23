@@ -5,10 +5,28 @@
     <link>/rspatial/tags/</link>
     <description>Recent content in Tags on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/rspatial/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>analisis</title>
+      <link>/rspatial/tags/analisis/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/tags/analisis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sumber</title>
+      <link>/rspatial/tags/sumber/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/tags/sumber/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>peta</title>
