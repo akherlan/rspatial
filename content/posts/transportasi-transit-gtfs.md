@@ -13,9 +13,11 @@ tags:
 
 **General Transit Feed Specification (GTFS)** mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (_stops_), rute angkutan (_routes_), perjalanan/pergerakan (_trips_), titik transit (_transfer_) jadwal perjalanan (_timetables_), waktu lainnya (_stop times_, _calendar_, _calendar dates_), tentang pengelola (_agency_), dan lain sebagainya.
 
-Format data menggunakan bentuk berkas teks dengan pemisah koma (`csv`) yang dibundel menjadi arsip `zip`.
+Format data menggunakan bentuk berkas teks (`txt`/`csv`) yang dibundel menjadi arsip `zip`.
 
-Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface).
+Proyek pengembangan format data GTFS diinisiasi oleh lembaga non-profit [MobilityData](https://mobilitydata.org/) yang berpusat di Kanada. Format ini dibuat untuk bisa diterapkan pada piranti (_tools_), untuk berbagai layanan dan dokumentasi.
+
+Spesifikasi data ini juga digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui sebuah antarmuka pemprograman aplikasi atau API (_application programming interface_).
 
 ![Diagram kelas data gtfs](http://tidytransit.r-transit.org/articles/figures/GTFS_class_diagram.svg.png)
 
@@ -25,9 +27,10 @@ Pada pemrograman R data dengan spesifikasi ini dapat dikelola dengan bantuan lib
 
 Berikut sumber-sumber yang berguna untuk mempelajarinya:
 
+- Laman resmi [gtfs.org](http://gtfs.org/getting-started/)
+- Panduan untuk [Google Transit API](https://developers.google.com/transit/gtfs/)
 - Library `tidytransit`: [dokumentasi paket](http://tidytransit.r-transit.org/articles/introduction.html)
 - Library `gtfsrouter`: [dokumentasi paket](https://atfutures.github.io/gtfs-router/articles/gtfsrouter.html)
-- Panduan untuk [Google Transit API](https://developers.google.com/transit/gtfs/)
 
 ### Pada bidang teknik sipil
 

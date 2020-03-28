@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="General Transit Feed Specification (GTFS) mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (stops), rute angkutan (routes), perjalanan/pergerakan (trips), titik transit (transfer) jadwal perjalanan (timetables), waktu lainnya (stop times, calendar, calendar dates), tentang pengelola (agency), dan lain sebagainya.
-Format data menggunakan bentuk berkas teks dengan pemisah koma (csv) yang dibundel menjadi arsip zip.
-Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface)."><meta property="og:title" content="Transportasi Transit dengan GTFS" />
+Format data menggunakan bentuk berkas teks (txt/csv) yang dibundel menjadi arsip zip.
+Proyek pengembangan format data GTFS diinisiasi oleh lembaga non-profit MobilityData yang berpusat di Kanada. Format ini dibuat untuk bisa diterapkan pada piranti (tools), untuk berbagai layanan dan dokumentasi."><meta property="og:title" content="Transportasi Transit dengan GTFS" />
 <meta property="og:description" content="General Transit Feed Specification (GTFS) mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (stops), rute angkutan (routes), perjalanan/pergerakan (trips), titik transit (transfer) jadwal perjalanan (timetables), waktu lainnya (stop times, calendar, calendar dates), tentang pengelola (agency), dan lain sebagainya.
-Format data menggunakan bentuk berkas teks dengan pemisah koma (csv) yang dibundel menjadi arsip zip.
-Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface)." />
+Format data menggunakan bentuk berkas teks (txt/csv) yang dibundel menjadi arsip zip.
+Proyek pengembangan format data GTFS diinisiasi oleh lembaga non-profit MobilityData yang berpusat di Kanada. Format ini dibuat untuk bisa diterapkan pada piranti (tools), untuk berbagai layanan dan dokumentasi." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/rspatial/posts/transportasi-transit/" />
 <meta property="article:published_time" content="2020-03-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-23T16:57:28+07:00" />
 <title>Transportasi Transit dengan GTFS | Spatial with R</title>
 <link rel="icon" href="/rspatial/favicon.png" type="image/x-icon">
 
@@ -21,7 +21,7 @@ Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar
 <link rel="stylesheet" href="/rspatial/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/rspatial/en.search.min.e4960f8510f844d4fa8cd7ece6f8c14395a85e89c5c0e3fc5cd338b767984fd1.js" integrity="sha256-5JYPhRD4RNT6jNfs5vjBQ5WoXonFwOP8XNM4t2eYT9E="></script>
+<script defer src="/rspatial/en.search.min.04cd93166970750dce69ae5a0a7117fc378a233c622c8ef43722788a4d7dfe35.js" integrity="sha256-BM2TFmlwdQ3Oaa5aCnEX/DeKIzxiLI70NyJ4ik19/jU="></script>
 
 <!--
 Made with Book Theme
@@ -401,8 +401,10 @@ https://github.com/alex-shpak/hugo-book
 
 
   <p><p><strong>General Transit Feed Specification (GTFS)</strong> mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (<em>stops</em>), rute angkutan (<em>routes</em>), perjalanan/pergerakan (<em>trips</em>), titik transit (<em>transfer</em>) jadwal perjalanan (<em>timetables</em>), waktu lainnya (<em>stop times</em>, <em>calendar</em>, <em>calendar dates</em>), tentang pengelola (<em>agency</em>), dan lain sebagainya.</p>
-<p>Format data menggunakan bentuk berkas teks dengan pemisah koma (<code>csv</code>) yang dibundel menjadi arsip <code>zip</code>.</p>
-<p>Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface).</p>
+<p>Format data menggunakan bentuk berkas teks (<code>txt</code>/<code>csv</code>) yang dibundel menjadi arsip <code>zip</code>.</p>
+<p>Proyek pengembangan format data GTFS diinisiasi oleh lembaga non-profit 
+  <a href="https://mobilitydata.org/">MobilityData</a> yang berpusat di Kanada. Format ini dibuat untuk bisa diterapkan pada piranti (<em>tools</em>), untuk berbagai layanan dan dokumentasi.</p>
+<p>Spesifikasi data ini juga digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui sebuah antarmuka pemprograman aplikasi atau API (<em>application programming interface</em>).</p>
 <p>
   <img src="http://tidytransit.r-transit.org/articles/figures/GTFS_class_diagram.svg.png" alt="Diagram kelas data gtfs" /></p>
 <p>*Diagram kelas data <code>gtfs</code> dari 
@@ -410,12 +412,14 @@ https://github.com/alex-shpak/hugo-book
 <p>Pada pemrograman R data dengan spesifikasi ini dapat dikelola dengan bantuan library <code>tidytransit</code> dan <code>gtfsrouter</code> (satu lagi <code>gtfsr</code> tapi pengelolaannya tidak aktif).</p>
 <p>Berikut sumber-sumber yang berguna untuk mempelajarinya:</p>
 <ul>
+<li>Laman resmi 
+  <a href="http://gtfs.org/getting-started/">gtfs.org</a></li>
+<li>Panduan untuk 
+  <a href="https://developers.google.com/transit/gtfs/">Google Transit API</a></li>
 <li>Library <code>tidytransit</code>: 
   <a href="http://tidytransit.r-transit.org/articles/introduction.html">dokumentasi paket</a></li>
 <li>Library <code>gtfsrouter</code>: 
   <a href="https://atfutures.github.io/gtfs-router/articles/gtfsrouter.html">dokumentasi paket</a></li>
-<li>Panduan untuk 
-  <a href="https://developers.google.com/transit/gtfs/">Google Transit API</a></li>
 </ul>
 <h3 id="pada-bidang-teknik-sipil">Pada bidang teknik sipil</h3>
 <p>Tentu ini akan berguna untuk menyelesaikan analisis dalam manajemen pengelolaan transportasi publik, maupun sistem transportasi. Membantu pengambilan keputusan dalam menentukan kebijakan.</p>
@@ -430,6 +434,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/akherlan/rspatial/commit/05f3e02a17aa078932c4affc006c952074c86dc8" title='Last modified by andi | 23 Mar 2020' target="_blank" rel="noopener">
+      <img src="/rspatial/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>23 Mar 2020</span>
+    </a>
+  </div>
 
 
 

@@ -121,8 +121,8 @@ Donasi Kami juga menerima donasi untuk kelancaran proyek ini.
       
       <guid>/rspatial/posts/transportasi-transit/</guid>
       <description>General Transit Feed Specification (GTFS) mengatur struktur data tentang transportasi publik. Mencakup lokasi perhentian (stops), rute angkutan (routes), perjalanan/pergerakan (trips), titik transit (transfer) jadwal perjalanan (timetables), waktu lainnya (stop times, calendar, calendar dates), tentang pengelola (agency), dan lain sebagainya.
-Format data menggunakan bentuk berkas teks dengan pemisah koma (csv) yang dibundel menjadi arsip zip.
-Spesifikasi ini digunakan oleh pengembang Google (khususnya Google Transit) agar bisa dimanfaatkan oleh berbagai teknologi melalui antarmuka pemprograman aplikasi atau API (application programming interface).</description>
+Format data menggunakan bentuk berkas teks (txt/csv) yang dibundel menjadi arsip zip.
+Proyek pengembangan format data GTFS diinisiasi oleh lembaga non-profit MobilityData yang berpusat di Kanada. Format ini dibuat untuk bisa diterapkan pada piranti (tools), untuk berbagai layanan dan dokumentasi.</description>
     </item>
     
     <item>
