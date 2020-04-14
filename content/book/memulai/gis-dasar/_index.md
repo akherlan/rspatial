@@ -1,12 +1,12 @@
 ---
 bookCollapseSection: true
-title: GIS Dasar
+title: SIG Dasar
 weight: 10
 ---
 
 # Pengenalan Geographic Information System (GIS)
 
-Istilah GIS dalam bahasa Indonesia adalah SIG (sistem informasi geografis). Tapi _ngomongnya_ enak: GIS. Lanjut...
+Istilah Sistem Informasi Geografi dalam bahasa Inggris adalah GIS (Greographic Information System). Tapi _ngomongnya_ enak: GIS. Lanjut...
 
 ## Apa sebenarnya GIS itu?
 

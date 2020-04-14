@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GIS Dasar on Spatial with R</title>
+    <title>SIG Dasar on Spatial with R</title>
     <link>/rspatial/book/memulai/gis-dasar/</link>
-    <description>Recent content in GIS Dasar on Spatial with R</description>
+    <description>Recent content in SIG Dasar on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="/rspatial/book/memulai/gis-dasar/index.xml" rel="self" type="application/rss+xml" />

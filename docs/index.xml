@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Belajar GIS dengan R on Spatial with R</title>
+    <title>Belajar SIG dengan R on Spatial with R</title>
     <link>/rspatial/</link>
-    <description>Recent content in Belajar GIS dengan R on Spatial with R</description>
+    <description>Recent content in Belajar SIG dengan R on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="/rspatial/index.xml" rel="self" type="application/rss+xml" />
@@ -98,19 +98,6 @@ Meskipun begitu, kali ini pokoknya kita tetap akan membahas QGIS dulu! Karena pe
       
       <guid>/rspatial/book/memulai/gis-dasar/gis-teknik-sipil/</guid>
       <description>Membahas penerapan GIS untuk industri teknik sipil.
- </description>
-    </item>
-    
-    <item>
-      <title>Kontribusi</title>
-      <link>/rspatial/kontribusi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/kontribusi/</guid>
-      <description>Kontribusi Proyek laman web referensi ini merupakan proyek terbuka dengan lisensi terbuka. Sehingga sangat menerima teman-teman yang ingin menyumbangkan tenaga, pikiran, ide, materi, serta apapun itu untuk memajukan proyek ini.
-Kode sumber untuk laman web ini tersedia di repo Github-nya.
-Untuk informasi lebih lanjut bisa kontak ke maintener saat ini ( Andi ).
-Donasi Kami juga menerima donasi untuk kelancaran proyek ini.
  </description>
     </item>
     

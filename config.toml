@@ -30,15 +30,11 @@ enableGitInfo = true
 
 [menu]
 # [[menu.before]]
-[[menu.after]]
-  name = "Kontribusi"
-  url = "https://akherlan.github.io/rspatial/kontribusi"
-  weight = 10
 
 [[menu.after]]
   name = "Kode Sumber"
   url = "https://github.com/akherlan/rspatial"
-  weight = 20
+  weight = 10
 
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.
