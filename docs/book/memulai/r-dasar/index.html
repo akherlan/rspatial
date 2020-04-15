@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pengenalan R  "><meta property="og:title" content="Pemrograman R Dasar" />
+<meta name="description" content="Pengenalan Bahasa R Mengapa R?  R termasuk bahasa pemrograman tingkat tinggi yang merupakan &ldquo;kepanjangan tangan&rdquo; (extended) dari bahasa-bahasa tingkat rendah yang biasa digunakan pada bidang teknik seperti C/C&#43;&#43; dan Fortran. Umum digunakan di kalangan akademisi dan peneliti. Mendukung konsep reproducible science dan sains terbuka (open science). Gratis.  Antar Muka Program Antarmuka bawaan dari R adalah melalui konsol pada command prompt/terminal. Tetapi telah banyak dikembangkan antarmuka pengguna yang lebih interaktif seperti:"><meta property="og:title" content="Pemrograman R Dasar" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/rspatial/book/memulai/r-dasar/" />
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/rspatial/book.min.63eb88daa545365405ecdbb21033286a325c60a36cfa6d22d21e7c3bc9286941.css" integrity="sha256-Y&#43;uI2qVFNlQF7NuyEDMoajJcYKNs&#43;m0i0h58O8koaUE=">
 
 
-<script defer src="/rspatial/en.search.min.ccfebbb517ed1d3c0c30a860d6439f9ac2ab22f56896bbea4853d0ab650973b9.js" integrity="sha256-zP67tRftHTwMMKhg1kOfmsKrIvVolrvqSFPQq2UJc7k="></script>
+<script defer src="/rspatial/en.search.min.3e7d9d520d2e6cee375d926d5615518c25f0c33856429b2ffaace3cf7124150d.js" integrity="sha256-Pn2dUg0ubO43XZJtVhVRjCXwwzhWQpsv&#43;qzjz3EkFQ0="></script>
 
 <link rel="alternate" type="application/rss+xml" href="/rspatial/book/memulai/r-dasar/index.xml" title="Spatial with R" />
 <!--
@@ -296,6 +296,35 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        
+
+  <li class="book-section-flat" >
+    
+
+  
+  <a href="/rspatial/book/daftar/" class="">Glosarium</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
   </ul>
   
 
@@ -364,12 +393,80 @@ https://github.com/alex-shpak/hugo-book
 
 
   
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pengenalan-bahasa-r">Pengenalan Bahasa R</a>
+      <ul>
+        <li><a href="#mengapa-r">Mengapa R?</a></li>
+        <li><a href="#antar-muka-program">Antar Muka Program</a></li>
+      </ul>
+    </li>
+    <li><a href="#format-berkas-dalam-bahasa-r">Format Berkas dalam Bahasa R</a></li>
+    <li><a href="#program-lain-yang-serupa">Program Lain yang Serupa</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="pengenalan-r">Pengenalan R</h1>
+  <article class="markdown"><h1 id="pengenalan-bahasa-r">Pengenalan Bahasa R</h1>
+<h2 id="mengapa-r">Mengapa R?</h2>
+<ul>
+<li>R termasuk bahasa pemrograman tingkat tinggi yang merupakan &ldquo;kepanjangan tangan&rdquo; (<em>extended</em>) dari bahasa-bahasa tingkat rendah yang biasa digunakan pada bidang teknik seperti C/C++ dan Fortran.</li>
+<li>Umum digunakan di kalangan akademisi dan peneliti.</li>
+<li>Mendukung konsep <em>reproducible science</em> dan sains terbuka (<em>open science</em>).</li>
+<li>Gratis.</li>
+</ul>
+<h2 id="antar-muka-program">Antar Muka Program</h2>
+<p>Antarmuka bawaan dari R adalah melalui konsol pada command prompt/terminal. Tetapi telah banyak dikembangkan antarmuka pengguna yang lebih interaktif seperti:</p>
+<ul>
+<li>RStudio</li>
+<li>Visual Studio Code</li>
+<li>Jupyter Notebook</li>
+</ul>
+<h1 id="format-berkas-dalam-bahasa-r">Format Berkas dalam Bahasa R</h1>
+<p>Data pada R umumnya disimpan dalam format <code>.rds</code>, <code>.rda</code>, atau <code>.rdata</code> sementara skripnya berformat <code>.r</code>.</p>
+<p>Namun begitu, format data lain juga dapat diimpor ke lingkungan kerja R. Format data yang dapat digunakan diantaranya:</p>
+<ul>
+<li>teks terstruktur seperti <code>csv</code>, <code>txt</code>, <code>json</code></li>
+<li>format worksheet seperti <code>xls</code> dan <code>xlsx</code></li>
+<li>basis data PostgreSQL, MySQL, dsb.</li>
+<li>berkas web seperti <code>xml</code>, <code>html</code></li>
+</ul>
+<h1 id="program-lain-yang-serupa">Program Lain yang Serupa</h1>
+<p><strong>Fungsi kalkulasi dan manipulasi data</strong></p>
+<ul>
+<li>Matlab</li>
+<li>Scielab</li>
+<li>C/C++</li>
+<li>Fortran</li>
+<li>Python</li>
+</ul>
+<p><strong>Fungsi olah data dan visual grafik</strong></p>
+<ul>
+<li>SPSS</li>
+<li>Microsoft Office Excel</li>
+<li>LibreOffice Calc</li>
+</ul>
+<p><strong>Fungsi SIG dan pemetaan</strong></p>
+<ul>
+<li>ArcGIS</li>
+<li>QGIS</li>
+</ul>
+<p><strong>Fungsi laporan dan dokumen</strong></p>
+<ul>
+<li>Microsoft Office Word</li>
+<li>LibreOffice Writer</li>
+<li>LaTex</li>
+</ul>
 <hr>
 </article>
  
@@ -411,6 +508,24 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pengenalan-bahasa-r">Pengenalan Bahasa R</a>
+      <ul>
+        <li><a href="#mengapa-r">Mengapa R?</a></li>
+        <li><a href="#antar-muka-program">Antar Muka Program</a></li>
+      </ul>
+    </li>
+    <li><a href="#format-berkas-dalam-bahasa-r">Format Berkas dalam Bahasa R</a></li>
+    <li><a href="#program-lain-yang-serupa">Program Lain yang Serupa</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 

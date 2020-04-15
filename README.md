@@ -8,7 +8,7 @@ Untuk informasi lebih lanjut bisa kontak ke _maintener_ ([Andi](https://t.me/akh
 
 ## TODO
 
-- [ ] Membuat daftar kebutuhan SIG pada bidang teknik sipil
+- [ ] Daftar kebutuhan SIG pada bidang teknik sipil
 - [ ] Outline materi dasar
 - [ ] Outline materi lanjutan
 - [ ] Cara-cara kontribusi
