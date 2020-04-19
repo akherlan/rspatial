@@ -1,10 +1,10 @@
 ---
-title: "R untuk Hidrologi [1]: hydroTSM"
+title: "R untuk Hidrologi (1): hydroTSM"
 description: "Mengelola data hujan harian, bulanan, tahunan, musiman menggunakan paket hydroTSM di R."
 date: '2020-04-19'
 author: Andi
 menu: main
-slug: analisi-hujan-dengan-hydrotsm
+slug: analisis-data-hujan-dengan-hydrotsm
 categories:
   - hidrologi
   - statistika
