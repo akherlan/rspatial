@@ -1,18 +1,18 @@
 ---
-title: "Analisis Data Hujan Harian Menggunakan hydroTSM"
-description: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+title: "R untuk Hidrologi [1]: hydroTSM"
+description: "Mengelola data hujan harian, bulanan, tahunan, musiman menggunakan paket hydroTSM di R."
 date: '2020-04-19'
 author: Andi
 menu: main
 slug: analisi-hujan-dengan-hydrotsm
 categories:
-  - visualisasi
-  - statistika
   - hidrologi
+  - statistika
 tags:
   - timeseries
   - hujan
   - plot
+  - grafik
 ---
 
 
@@ -266,7 +266,7 @@ m &lt;- climograph(pcp=pcp, tmx=tmx, tmn=tmn, na.rm=TRUE)</code></pre>
 </div>
 <div id="detail-piranti-lunak" class="section level2">
 <h2>Detail piranti lunak</h2>
-<p>Tutorial ini dibuat dengan spesisifikasi komputer seperti berikut (versi penerjemah):</p>
+<p>Tutorial ini dibuat dengan spesifikasi komputer seperti berikut (versi penerjemah):</p>
 <pre><code>## [1] &quot;x86_64-pc-linux-gnu (64-bit)&quot;</code></pre>
 <pre><code>## [1] &quot;R version 3.6.3 (2020-02-29)&quot;</code></pre>
 <pre><code>## [1] &quot;hydroTSM 0.6-0&quot;</code></pre>
@@ -277,11 +277,11 @@ m &lt;- climograph(pcp=pcp, tmx=tmx, tmn=tmn, na.rm=TRUE)</code></pre>
 <div id="mengimpor-data" class="section level3">
 <h3>Mengimpor data</h3>
 <ul>
-<li><code>?read.table</code>, <code>?write.table</code>: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format <span class="math inline">\(~\)</span>tabel) dan membuat sebuah data frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah <code>?read.csv</code>, <code>?write.csv</code>, <code>?read.csv2</code>, <code>?write.csv2</code>.</li>
+<li><code>?read.table</code>, <code>?write.table</code>: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format tabel) dan membuat sebuah data.frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah <code>?read.csv</code>, <code>?write.csv</code>, <code>?read.csv2</code>, <code>?write.csv2</code>.</li>
 <li><a href="http://cran.r-project.org/web/packages/foreign/"><strong>foreign</strong></a>: membaca data yang tersimpan dalam beberapa format di luar format R (misalnya: dBase, Minitab, S, SAS, SPSS, Stata, Systat, Weka, …)</li>
 <li><code>?zoo::read.zoo</code>, <code>?zoo::write.zoo</code>: fungsi-fungsi untuk membaca dan menulis data seri waktu dari/menjadi berkas teks.</li>
 <li><a href="http://cran.r-project.org/doc/manuals/r-release/R-data.html">R Data Import/Export</a> (EN)</li>
-<li><a href="http://www.statmethods.net/input/importingdata.html">beberapa contoh lain</a> (EN)</li>
+<li><a href="http://www.statmethods.net/input/importingdata.html">Beberapa contoh lain</a> (EN)</li>
 </ul>
 </div>
 <div id="laman-web-yang-berguna" class="section level3">

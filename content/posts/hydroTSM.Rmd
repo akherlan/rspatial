@@ -1,18 +1,18 @@
 ---
-title: "Analisis Data Hujan Harian Menggunakan hydroTSM"
-description: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+title: "R untuk Hidrologi [1]: hydroTSM"
+description: "Mengelola data hujan harian, bulanan, tahunan, musiman menggunakan paket hydroTSM di R."
 date: '2020-04-19'
 author: Andi
 menu: main
 slug: analisi-hujan-dengan-hydrotsm
 categories:
-  - visualisasi
-  - statistika
   - hidrologi
+  - statistika
 tags:
   - timeseries
   - hujan
   - plot
+  - grafik
 ---
 
 ```{r setup, include = FALSE}
@@ -300,7 +300,7 @@ m <- climograph(pcp=pcp, tmx=tmx, tmn=tmn, na.rm=TRUE)
 
 
 ## Detail piranti lunak
-Tutorial ini dibuat dengan spesisifikasi komputer seperti berikut (versi penerjemah): 
+Tutorial ini dibuat dengan spesifikasi komputer seperti berikut (versi penerjemah): 
 
 ```{r echo=FALSE}
 sessionInfo()$platform
@@ -316,11 +316,11 @@ Agar mempermudah penggunaan **hydroTSM** bagi teman-teman yang belum familiar de
 
 ### Mengimpor data
 
-*  `?read.table`, `?write.table`: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format $~$tabel) dan membuat sebuah data frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah `?read.csv`, `?write.csv`, `?read.csv2`, `?write.csv2`.
+*  `?read.table`, `?write.table`: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format tabel) dan membuat sebuah data.frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah `?read.csv`, `?write.csv`, `?read.csv2`, `?write.csv2`.
 *  [**foreign**](http://cran.r-project.org/web/packages/foreign/): membaca data yang tersimpan dalam beberapa format di luar format R (misalnya: dBase, Minitab, S, SAS, SPSS, Stata, Systat, Weka, ...)
 *  `?zoo::read.zoo`, `?zoo::write.zoo`: fungsi-fungsi untuk membaca dan menulis data seri waktu dari/menjadi berkas teks.
 *  [R Data Import/Export](http://cran.r-project.org/doc/manuals/r-release/R-data.html) (EN)
-*  [beberapa contoh lain](http://www.statmethods.net/input/importingdata.html) (EN)
+*  [Beberapa contoh lain](http://www.statmethods.net/input/importingdata.html) (EN)
 
 
 

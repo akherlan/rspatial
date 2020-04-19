@@ -29,15 +29,6 @@
     </item>
     
     <item>
-      <title>visualisasi</title>
-      <link>/rspatial/categories/visualisasi/</link>
-      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/categories/visualisasi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/rspatial/categories/R/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
@@ -52,6 +43,15 @@
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/categories/transportasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualisasi</title>
+      <link>/rspatial/categories/visualisasi/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/categories/visualisasi/</guid>
       <description></description>
     </item>
     
