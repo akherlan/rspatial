@@ -1,0 +1,295 @@
+---
+title: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+description: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+date: '2020-04-19'
+author: Andi
+menu: main
+slug: analisi-hujan-dengan-hydrotsm
+categories:
+  - visualisasi
+  - statistika
+  - hidrologi
+tags:
+  - timeseries
+  - hujan
+  - plot
+---
+
+
+
+<p><em>Artikel berikut merupakan terjemahan </em> <a href="https://cran.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Vignette-knitr.pdf"><em>dari contoh</em></a> <em>penggunaan paket <strong>hydroTSM</strong> yang ditulis oleh</em> <a href="mailto:mauricio.zambrano@ufrontera.cl"><em><strong>Mauricio Zambrano-Bigiarini</strong></em></a> <em>dengan sedikit penyesuaian.</em></p>
+<div id="instalasi-paket" class="section level2">
+<h2>Instalasi paket</h2>
+<p>Menginstal versi paket stabil terakhir dari <a href="http://cran.r-project.org/web/packages/hydroTSM/">CRAN</a>:</p>
+<pre class="r"><code>install.packages(&quot;hydroTSM&quot;)</code></pre>
+<p>Sebagai alternatif, teman-teman bisa juga menginstal versi yang sedang dikembangkan dari <a href="https://github.com/hzambran/hydroTSM">Github</a>:</p>
+<pre class="r"><code>if (!require(devtools)) install.packages(&quot;devtools&quot;)
+library(devtools)
+install_github(&quot;hzambran/hydroTSM&quot;)</code></pre>
+</div>
+<div id="mengatur-lingkungan-kerja" class="section level2">
+<h2>Mengatur lingkungan kerja</h2>
+<p>Memuat pustaka <strong>hydroTSM</strong>, yangmana berisi data dan fungsi-fungsi yang akan digunakan dalam analisis ini.</p>
+<pre class="r"><code>library(hydroTSM)</code></pre>
+<pre><code>## Loading required package: zoo</code></pre>
+<pre><code>## 
+## Attaching package: &#39;zoo&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     as.Date, as.Date.numeric</code></pre>
+<pre><code>## Loading required package: xts</code></pre>
+<p>Memuat data hujan harian dari stasiun pengamatan San Martino di Castrozza, Provinsi Trento, Italia. Data sejak 01 Jan 1921 hingga 31 Des 1990.</p>
+<pre class="r"><code>data(SanMartinoPPts)</code></pre>
+<p>Memilih hanya potongan data dengan durasi selama 6 tahun untuk analisis.</p>
+<pre class="r"><code>x &lt;- window(SanMartinoPPts, start=as.Date(&quot;1985-01-01&quot;))</code></pre>
+<p>Mengubah/menjumlah nilai hujan harian menjadi bulanan.</p>
+<pre class="r"><code>( m &lt;- daily2monthly(x, FUN=sum) )</code></pre>
+<pre><code>## 1985-01-01 1985-02-01 1985-03-01 1985-04-01 1985-05-01 1985-06-01 1985-07-01 
+##      141.2        7.0      140.6       72.0      175.6      131.4       85.4 
+## 1985-08-01 1985-09-01 1985-10-01 1985-11-01 1985-12-01 1986-01-01 1986-02-01 
+##      159.4       27.2       58.4      101.8       54.8       75.8      131.6 
+## 1986-03-01 1986-04-01 1986-05-01 1986-06-01 1986-07-01 1986-08-01 1986-09-01 
+##       59.6      237.8      108.2      144.8       81.2      141.0       69.8 
+## 1986-10-01 1986-11-01 1986-12-01 1987-01-01 1987-02-01 1987-03-01 1987-04-01 
+##       38.2       44.4       20.4       46.8      111.0       45.6       98.4 
+## 1987-05-01 1987-06-01 1987-07-01 1987-08-01 1987-09-01 1987-10-01 1987-11-01 
+##      212.0      153.8      221.8      175.0       90.6      278.8      164.8 
+## 1987-12-01 1988-01-01 1988-02-01 1988-03-01 1988-04-01 1988-05-01 1988-06-01 
+##       29.8      118.0       49.8       22.4      100.6      187.4      193.0 
+## 1988-07-01 1988-08-01 1988-09-01 1988-10-01 1988-11-01 1988-12-01 1989-01-01 
+##      120.4      149.2       61.2      136.4       10.0       59.4        0.0 
+## 1989-02-01 1989-03-01 1989-04-01 1989-05-01 1989-06-01 1989-07-01 1989-08-01 
+##      152.6       46.2      365.4       77.4      241.6      302.8      114.4 
+## 1989-09-01 1989-10-01 1989-11-01 1989-12-01 1990-01-01 1990-02-01 1990-03-01 
+##       65.4       12.8      145.0      110.6       51.6       12.4       65.8 
+## 1990-04-01 1990-05-01 1990-06-01 1990-07-01 1990-08-01 1990-09-01 1990-10-01 
+##      127.0       74.4      175.0      143.8       90.8      106.0      153.0 
+## 1990-11-01 1990-12-01 
+##      326.6      106.0</code></pre>
+<p>Mengekstraksi nilai tanggal dari data harian <code>x</code>.</p>
+<pre class="r"><code>dates &lt;- time(x)</code></pre>
+<p>Banyaknya tahun dalam <code>x</code> (dibutuhkan untuk perhitungan)</p>
+<pre class="r"><code>( nyears &lt;- yip(from=start(x), to=end(x), out.type=&quot;nmbr&quot; ) )</code></pre>
+<pre><code>## [1] 6</code></pre>
+</div>
+<div id="analisis-data-eksplorasi-dasar-exploratory-data-analysis-eda" class="section level2">
+<h2>Analisis data eksplorasi dasar (<em>exploratory data analysis</em> / EDA)</h2>
+<ol style="list-style-type: decimal">
+<li>Ringkasan statistika</li>
+</ol>
+<pre class="r"><code>smry(x)</code></pre>
+<pre><code>##               Index         x
+## Min.     1985-01-01    0.0000
+## 1st Qu.  1986-07-02    0.0000
+## Median   1988-01-01    0.0000
+## Mean     1988-01-01    3.7470
+## 3rd Qu.  1989-07-01    2.6000
+## Max.     1990-12-31  122.0000
+## IQR            &lt;NA&gt;    2.6000
+## sd             &lt;NA&gt;   10.0428
+## cv             &lt;NA&gt;    2.6800
+## Skewness       &lt;NA&gt;    5.3512
+## Kurtosis       &lt;NA&gt;   39.1619
+## NA&#39;s           &lt;NA&gt;    0.0000
+## n              &lt;NA&gt; 2191.0000</code></pre>
+<p>Menggunakan fungsi <code>hydroplot</code>, yangmana (secara standar) akan memplot 9 grafik berbeda, yakni: 3 plot seri waktu, 3 boxplot dan 3 histogram yang meringkaas <code>x</code>. Pada contoh ini, hanya plot-plot harian dan bulanan yang akan dihasilkan, dan hanya data yang dimulai pada 01 Jan 1987 yang akan diplot.</p>
+<pre class="r"><code>hydroplot(x, var.type=&quot;Precipitation&quot;, main=&quot;at San Martino&quot;, 
+          pfreq = &quot;dm&quot;, from=&quot;1987-01-01&quot;)</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/hydroplot-1.png" width="960" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Banyaknya hari dengan informasi hujan (termasuk 0, bukan NA) per tahun</li>
+</ol>
+<pre class="r"><code>dwi(x)</code></pre>
+<pre><code>## 1985 1986 1987 1988 1989 1990 
+##  365  365  365  366  365  365</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Banyaknya hari dengan informasi hujan (termasuk 0, bukan NA) per bulan per tahun</li>
+</ol>
+<pre class="r"><code>dwi(x, out.unit=&quot;mpy&quot;)</code></pre>
+<pre><code>##      Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+## 1985  31  28  31  30  31  30  31  31  30  31  30  31
+## 1986  31  28  31  30  31  30  31  31  30  31  30  31
+## 1987  31  28  31  30  31  30  31  31  30  31  30  31
+## 1988  31  29  31  30  31  30  31  31  30  31  30  31
+## 1989  31  28  31  30  31  30  31  31  30  31  30  31
+## 1990  31  28  31  30  31  30  31  31  30  31  30  31</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Memplot nilai hujan bulanan tiap tahun, berguna untuk mengidentifikasi bulan-bulan basah/kering.</li>
+</ol>
+<pre class="r"><code># kelas data zoo (ts) harian menjadi bulanan
+m &lt;- daily2monthly(x, FUN=sum, na.rm=TRUE)
+     
+# membuat sebuah matrix dengan nilai bulanan per tahun dalam tiap kolom
+M &lt;- matrix(m, ncol=12, byrow=TRUE)
+colnames(M) &lt;- month.abb
+rownames(M) &lt;- unique(format(time(m), &quot;%Y&quot;))
+     
+# memplot nilai hujan bulanan
+require(lattice)</code></pre>
+<pre><code>## Loading required package: lattice</code></pre>
+<pre class="r"><code>print(matrixplot(M, ColorRamp=&quot;Precipitation&quot;, 
+           main=&quot;Monthly precipitation at San Martino st., [mm/month]&quot;))</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/matrixplot-1.png" width="672" /></p>
+</div>
+<div id="analisis-tahunan" class="section level2">
+<h2>Analisis tahunan</h2>
+<p>Nilai-nilai hujan tahunan (<em>annual</em>)</p>
+<pre class="r"><code>daily2annual(x, FUN=sum, na.rm=TRUE)</code></pre>
+<pre><code>## 1985-01-01 1986-01-01 1987-01-01 1988-01-01 1989-01-01 1990-01-01 
+##     1154.8     1152.8     1628.4     1207.8     1634.2     1432.4</code></pre>
+<p>Rata-rata hujan tahunan</p>
+<p>Cara yang mudah dipahami:</p>
+<pre class="r"><code>mean( daily2annual(x, FUN=sum, na.rm=TRUE) )</code></pre>
+<pre><code>## [1] 1368.4</code></pre>
+<p>Cara lain (lebih berguna untuk analisis aliran, dimana <code>FUN=mean</code>):</p>
+<p>Fungsi <code>annualfunction</code> menerapkan <code>FUN</code> dua kali pada <code>x</code>:</p>
+<p>( i) pertama, pada seluruh elemen <code>x</code> termasuk ke tahun yang sama, untuk mendapatkan nilai tahunan yang sesuai, dan</p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>kedua, pada seluruh nilai tahunan <code>x</code> yang sebelumnya diperoleh, untuk mendapatkan nilai tahunan tunggal.</li>
+</ol>
+<pre class="r"><code>annualfunction(x, FUN=sum, na.rm=TRUE) / nyears</code></pre>
+<pre><code>##  value 
+## 1368.4</code></pre>
+</div>
+<div id="analisis-bulanan" class="section level2">
+<h2>Analisis bulanan</h2>
+<p>Nilai tengah (median) dari hujan bulanan pada station <code>x</code>. Tidak diperlukan, hanya untuk melihat nilai-nilainya melalui boxplot.</p>
+<pre class="r"><code>monthlyfunction(m, FUN=median, na.rm=TRUE)</code></pre>
+<pre><code>##   Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec 
+##  63.7  80.4  52.9 113.8 141.9 164.4 132.1 145.1  67.6  97.4 123.4  57.1</code></pre>
+<p>Vektor dengan nama bulan yang memiliki format singkatan tiga huruf.</p>
+<pre class="r"><code>cmonth &lt;- format(time(m), &quot;%b&quot;)</code></pre>
+<p>Membuat tipe data bulan menjadi factor yang memiliki bobot terurut.</p>
+<pre class="r"><code>months &lt;- factor(cmonth, levels=unique(cmonth), ordered=TRUE)</code></pre>
+<p>Boxplot nilai hujan bulanan</p>
+<pre class="r"><code>boxplot( coredata(m) ~ months, col=&quot;lightblue&quot;, main=&quot;Monthly Precipitation&quot;, 
+         ylab=&quot;Precipitation, [mm]&quot;, xlab=&quot;Month&quot;)</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/boxplotMonthly-1.png" width="672" /></p>
+</div>
+<div id="analisis-musiman" class="section level2">
+<h2>Analisis musiman</h2>
+<p>Rata-rata nilai hujan musiman.</p>
+<pre class="r"><code>seasonalfunction(x, FUN=sum, na.rm=TRUE) / nyears</code></pre>
+<pre><code>##      DJF      MAM      JJA      SON 
+## 213.1333 369.4000 470.8000 315.0667</code></pre>
+<p>Mengekstrak nilai musiman untuk tiap tahun.</p>
+<pre class="r"><code>( DJF &lt;- dm2seasonal(x, season=&quot;DJF&quot;, FUN=sum) )</code></pre>
+<pre><code>##  1985  1986  1987  1988  1989  1990 
+## 148.2 262.2 178.2 197.6 212.0 174.6</code></pre>
+<pre class="r"><code>( MAM &lt;- dm2seasonal(m, season=&quot;MAM&quot;, FUN=sum) )</code></pre>
+<pre><code>##  1985  1986  1987  1988  1989  1990 
+## 388.2 405.6 356.0 310.4 489.0 267.2</code></pre>
+<pre class="r"><code>( JJA &lt;- dm2seasonal(m, season=&quot;JJA&quot;, FUN=sum) )</code></pre>
+<pre><code>##  1985  1986  1987  1988  1989  1990 
+## 376.2 367.0 550.6 462.6 658.8 409.6</code></pre>
+<pre class="r"><code>( SON &lt;- dm2seasonal(m, season=&quot;SON&quot;, FUN=sum) )</code></pre>
+<pre><code>##  1985  1986  1987  1988  1989  1990 
+## 187.4 152.4 534.2 207.6 223.2 585.6</code></pre>
+<p>Memplot evolusi waktu dari nilai hujan musiman.</p>
+<pre class="r"><code>hydroplot(x, pfreq=&quot;seasonal&quot;, FUN=sum, stype=&quot;default&quot;)</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/hydroplot2-1.png" width="1152" /></p>
+</div>
+<div id="beberapa-indikasi-ekstrim" class="section level2">
+<h2>Beberapa indikasi ekstrim</h2>
+<p>Langkah yang umum/biasa untuk bagian analisis ini:</p>
+<p>Memuat data hujan harian dari stasiun pengamatan San Martino di Castrozza, Provinsi Trento, Italia, dengan data sejak 01 Jan 1921 hingga 31 Des 1990.</p>
+<pre class="r"><code>data(SanMartinoPPts)</code></pre>
+<p>Memilih hanya potongan data dengan durasi selama 3 tahun untuk analisis.</p>
+<pre class="r"><code>x &lt;- window(SanMartinoPPts, start=as.Date(&quot;1988-01-01&quot;))</code></pre>
+<p>Memplot seri waktu terpilih:</p>
+<pre class="r"><code>hydroplot(x,  ptype=&quot;ts&quot;, pfreq=&quot;o&quot;, var.unit=&quot;mm&quot;)</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/hydroplot3-1.png" width="672" /></p>
+<div id="hari-hari-saat-hujan-lebat-r10mm---heavy-precipitation-days" class="section level3">
+<h3>Hari-hari saat hujan lebat (R10mm) - <em>heavy precipitation days</em></h3>
+<p>Menghitung dan memplot banyaknya hari dalam suatu periode dimana hujan &gt;10 mm.</p>
+<pre class="r"><code>( R10mm &lt;- length( x[x&gt;10] ) )</code></pre>
+<pre><code>## [1] 127</code></pre>
+</div>
+<div id="hari-hari-basah-r95p---very-wet-days" class="section level3">
+<h3>Hari-hari basah (R95p) - <em>very wet days</em></h3>
+<ul>
+<li>mengidentifikasi hari-hari hujan (hujan harian &gt;= 1 mm):</li>
+</ul>
+<pre class="r"><code>wet.index &lt;- which(x &gt;= 1)</code></pre>
+<ul>
+<li>menghitung persentil ke-95 dari hujan pada hari-hari basah (<em>PRwn95</em>):</li>
+</ul>
+<pre class="r"><code>( PRwn95 &lt;- quantile(x[wet.index], probs=0.95, na.rm=TRUE) )</code></pre>
+<pre><code>##   95% 
+## 39.75</code></pre>
+<p><strong>Catatan 1</strong>: perhitungan ini was dilakukan untuk periode waktu tiga tahun 1988-1990, bukan periode 30 tahun 1961-1990 yang biasa digunakan.</p>
+<p><strong>Catatan 2</strong>: nilai-nilai yang hilang telah dihapus dari perhitungan.</p>
+<ul>
+<li>mengidentifikasi hari-hari sangat basah (hujan harian &gt;= <em>PRwn95</em>)</li>
+</ul>
+<pre class="r"><code>(very.wet.index &lt;- which(x &gt;= PRwn95))</code></pre>
+<pre><code>##  [1]   30   92  234  287  422  423  461  550  551  674  676  719  939  950  998
+## [16] 1058 1061 1075</code></pre>
+<ul>
+<li>Menghitung hujan total pada hari-hari sangat basah:</li>
+</ul>
+<pre class="r"><code>( R95p &lt;- sum(x[very.wet.index]) )</code></pre>
+<pre><code>## [1] 1196.4</code></pre>
+<p><strong>Catatan 3</strong>: perhitungan ini dilakukan untuk periode waktu tiga tahun 1988-1990, bukan periode 30 tahun 1961-1990 yang biasa digunakan.</p>
+</div>
+<div id="hujan-total-5-harian" class="section level3">
+<h3>Hujan total 5 harian</h3>
+<p>Menghitung total (akumulasi) hujan 5 hari:</p>
+<pre class="r"><code>x.5max &lt;- rollapply(data=x, width=5, FUN=sum, fill=NA, partial= TRUE, 
+                    align=&quot;center&quot;)
+
+hydroplot(x.5max,  ptype=&quot;ts+boxplot&quot;, pfreq=&quot;o&quot;, var.unit=&quot;mm&quot;)</code></pre>
+<pre><code>## [Note: pfreq=&#39;o&#39; =&gt; ptype has been changed to &#39;ts&#39;]</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/x_5max-1.png" width="672" /></p>
+<p>Nilai tahunan maksimum dari hujan total 5 hari:</p>
+<pre class="r"><code>(x.5max.annual &lt;- daily2annual(x.5max, FUN=max, na.rm=TRUE))</code></pre>
+<pre><code>## 1988-01-01 1989-01-01 1990-01-01 
+##      113.2      170.8      237.2</code></pre>
+<p><strong>Catatan 1</strong>: untuk perhitungan ini, digunakan hari pertengahan. Jika teman-teman ingin hujan total 5 hari diakumulasikan dalam 4 hari sebelum hari sekarang + hujan pada hari sekarang, teman-teman harus melalukan modifikasi.</p>
+<p><strong>Catatan 2</strong>: untuk dua nilai awal dan dua nilai terakhir, lebar disesuaikan untuk tidak mengikutsertakan nilai yang bukan di dalam seri waktu.</p>
+</div>
+</div>
+<div id="klimograf" class="section level2">
+<h2>Klimograf</h2>
+<p>Sejak versi 0.5-0, <code>hydroTSM</code> menyertakan sebuah fungsi untuk memplot klimograf, tidak hanya data hujan/presipitasi tetapi juga data suhu udara seperti:</p>
+<pre class="r"><code># memuat seri waktu harian dari hujan, max dan min suhu
+data(MaquehueTemuco)
+
+# mengekstrak seri waktu individual dari hujan, max dan min suhu
+pcp &lt;- MaquehueTemuco[, 1]
+tmx &lt;- MaquehueTemuco[, 2]
+tmn &lt;- MaquehueTemuco[, 3]
+     
+# memplot klimograf
+m &lt;- climograph(pcp=pcp, tmx=tmx, tmn=tmn, na.rm=TRUE)</code></pre>
+<p><img src="/rspatial/posts/hydroTSM_files/figure-html/climograph-1.png" width="768" style="display: block; margin: auto;" /></p>
+</div>
+<div id="detail-piranti-lunak" class="section level2">
+<h2>Detail piranti lunak</h2>
+<p>Tutorial ini dibuat dengan spesisifikasi komputer seperti berikut (versi penerjemah):</p>
+<pre><code>## [1] &quot;x86_64-pc-linux-gnu (64-bit)&quot;</code></pre>
+<pre><code>## [1] &quot;R version 3.6.3 (2020-02-29)&quot;</code></pre>
+<pre><code>## [1] &quot;hydroTSM 0.6-0&quot;</code></pre>
+</div>
+<div id="lampiran" class="section level2">
+<h2>Lampiran</h2>
+<p>Agar mempermudah penggunaan <strong>hydroTSM</strong> bagi teman-teman yang belum familiar dengan R, penulis menyediakan sekumpulan informasi sebagai panduan untuk teman-teman menggunakan <a href="http://www.r-project.org/">R</a>.</p>
+<div id="mengimpor-data" class="section level3">
+<h3>Mengimpor data</h3>
+<ul>
+<li><code>?read.table</code>, <code>?write.table</code>: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format <span class="math inline">\(~\)</span>tabel) dan membuat sebuah data frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah <code>?read.csv</code>, <code>?write.csv</code>, <code>?read.csv2</code>, <code>?write.csv2</code>.</li>
+<li><a href="http://cran.r-project.org/web/packages/foreign/"><strong>foreign</strong></a>: membaca data yang tersimpan dalam beberapa format di luar format R (misalnya: dBase, Minitab, S, SAS, SPSS, Stata, Systat, Weka, …)</li>
+<li><code>?zoo::read.zoo</code>, <code>?zoo::write.zoo</code>: fungsi-fungsi untuk membaca dan menulis data seri waktu dari/menjadi berkas teks.</li>
+<li><a href="http://cran.r-project.org/doc/manuals/r-release/R-data.html">R Data Import/Export</a> (EN)</li>
+<li><a href="http://www.statmethods.net/input/importingdata.html">beberapa contoh lain</a> (EN)</li>
+</ul>
+</div>
+<div id="laman-web-yang-berguna" class="section level3">
+<h3>Laman web yang berguna</h3>
+<ul>
+<li><a href="http://www.statmethods.net/">Quick R</a></li>
+<li><a href="http://cran.r-project.org/web/views/TimeSeries.html">Time series in R</a></li>
+<li><a href="http://cran.r-project.org/web/packages/zoo/vignettes/zoo-quickref.pdf">Quick reference for the <code>zoo</code> package</a></li>
+</ul>
+</div>
+</div>

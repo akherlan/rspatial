@@ -1,0 +1,333 @@
+---
+title: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+description: "Analisis Data Hujan Harian Menggunakan hydroTSM"
+date: '2020-04-19'
+author: Andi
+menu: main
+slug: analisi-hujan-dengan-hydrotsm
+categories:
+  - visualisasi
+  - statistika
+  - hidrologi
+tags:
+  - timeseries
+  - hujan
+  - plot
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+_Artikel berikut merupakan terjemahan _ [_dari contoh_](https://cran.r-project.org/web/packages/hydroTSM/vignettes/hydroTSM_Vignette-knitr.pdf) _penggunaan paket **hydroTSM** yang ditulis oleh_ [_**Mauricio Zambrano-Bigiarini**_](mailto:mauricio.zambrano@ufrontera.cl) _dengan sedikit penyesuaian._
+
+## Instalasi paket
+
+Menginstal versi paket stabil terakhir dari [CRAN](http://cran.r-project.org/web/packages/hydroTSM/):
+```{r installation1, eval=FALSE}
+install.packages("hydroTSM")
+```
+
+
+Sebagai alternatif, teman-teman bisa juga menginstal versi yang sedang dikembangkan dari  [Github](https://github.com/hzambran/hydroTSM):
+```{r installation2, eval=FALSE}
+if (!require(devtools)) install.packages("devtools")
+library(devtools)
+install_github("hzambran/hydroTSM")
+```
+
+
+## Mengatur lingkungan kerja
+
+Memuat pustaka **hydroTSM**, yangmana berisi data dan fungsi-fungsi yang akan digunakan dalam analisis ini.
+```{r LoadingPkg}
+library(hydroTSM)
+```
+
+Memuat data hujan harian dari stasiun pengamatan San Martino di Castrozza, Provinsi Trento, Italia. Data sejak 01 Jan 1921 hingga 31 Des 1990.
+
+```{r LoadingData}
+data(SanMartinoPPts)
+```
+
+Memilih hanya potongan data dengan durasi selama 6 tahun untuk analisis.
+
+```{r Window}
+x <- window(SanMartinoPPts, start=as.Date("1985-01-01"))
+```
+
+Mengubah/menjumlah nilai hujan harian menjadi bulanan.
+
+```{r daily2monthly}
+( m <- daily2monthly(x, FUN=sum) )
+```
+
+Mengekstraksi nilai tanggal dari data harian `x`.
+```{r Dates}
+dates <- time(x)
+```
+
+Banyaknya tahun dalam `x` (dibutuhkan untuk perhitungan)
+```{r yip}
+( nyears <- yip(from=start(x), to=end(x), out.type="nmbr" ) )
+```
+
+
+## Analisis data eksplorasi dasar (_exploratory data analysis_ / EDA)
+
+
+1)  Ringkasan statistika
+```{r smry}
+smry(x)
+```
+
+
+Menggunakan fungsi `hydroplot`, yangmana (secara standar) akan memplot 9 grafik berbeda, yakni: 3 plot seri waktu, 3 boxplot dan 3 histogram yang meringkaas `x`. Pada contoh ini, hanya plot-plot harian dan bulanan yang akan dihasilkan, dan hanya data yang dimulai pada 01 Jan 1987 yang akan diplot.
+
+```{r hydroplot, fig.width=10, fig.height=8}
+hydroplot(x, var.type="Precipitation", main="at San Martino", 
+          pfreq = "dm", from="1987-01-01")
+```
+
+2)  Banyaknya hari dengan informasi hujan (termasuk 0, bukan NA) per tahun
+```{r dwi1}
+dwi(x)
+```
+
+3)  Banyaknya hari dengan informasi hujan (termasuk 0, bukan NA) per bulan per tahun
+```{r dwi2}
+dwi(x, out.unit="mpy")
+```
+
+
+4)  Memplot nilai hujan bulanan tiap tahun, berguna untuk mengidentifikasi bulan-bulan basah/kering.
+
+```{r matrixplot}
+# kelas data zoo (ts) harian menjadi bulanan
+m <- daily2monthly(x, FUN=sum, na.rm=TRUE)
+     
+# membuat sebuah matrix dengan nilai bulanan per tahun dalam tiap kolom
+M <- matrix(m, ncol=12, byrow=TRUE)
+colnames(M) <- month.abb
+rownames(M) <- unique(format(time(m), "%Y"))
+     
+# memplot nilai hujan bulanan
+require(lattice)
+print(matrixplot(M, ColorRamp="Precipitation", 
+           main="Monthly precipitation at San Martino st., [mm/month]"))
+```
+
+
+## Analisis tahunan
+
+
+Nilai-nilai hujan tahunan (_annual_)
+```{r daily2annual}
+daily2annual(x, FUN=sum, na.rm=TRUE)
+```
+
+Rata-rata hujan tahunan
+
+Cara yang mudah dipahami:
+
+```{r daily2annual2}
+mean( daily2annual(x, FUN=sum, na.rm=TRUE) )
+```
+
+Cara lain (lebih berguna untuk analisis aliran, dimana `FUN=mean`):
+
+Fungsi `annualfunction` menerapkan `FUN` dua kali pada `x`: 
+
+( i) pertama, pada seluruh elemen `x` termasuk ke tahun yang sama, untuk mendapatkan nilai tahunan yang sesuai, dan
+
+(ii) kedua, pada seluruh nilai tahunan `x` yang sebelumnya diperoleh, untuk mendapatkan nilai tahunan tunggal.
+
+```{r annualfunction}
+annualfunction(x, FUN=sum, na.rm=TRUE) / nyears
+```
+
+
+## Analisis bulanan
+
+
+Nilai tengah (median) dari hujan bulanan pada station `x`. Tidak diperlukan, hanya untuk melihat nilai-nilainya melalui boxplot.
+
+```{r monthlyfunction}
+monthlyfunction(m, FUN=median, na.rm=TRUE)
+```
+
+Vektor dengan nama bulan yang memiliki format singkatan tiga huruf.
+```{r cmonth}
+cmonth <- format(time(m), "%b")
+```
+
+Membuat tipe data bulan menjadi factor yang memiliki bobot terurut.
+```{r months}
+months <- factor(cmonth, levels=unique(cmonth), ordered=TRUE)
+```
+
+Boxplot nilai hujan bulanan
+```{r boxplotMonthly}
+boxplot( coredata(m) ~ months, col="lightblue", main="Monthly Precipitation", 
+         ylab="Precipitation, [mm]", xlab="Month")
+```
+
+
+## Analisis musiman
+
+Rata-rata nilai hujan musiman.
+
+```{r seasonalfunction}
+seasonalfunction(x, FUN=sum, na.rm=TRUE) / nyears
+```
+
+Mengekstrak nilai musiman untuk tiap tahun.
+```{r dm2seasonal}
+( DJF <- dm2seasonal(x, season="DJF", FUN=sum) )
+( MAM <- dm2seasonal(m, season="MAM", FUN=sum) )
+( JJA <- dm2seasonal(m, season="JJA", FUN=sum) )
+( SON <- dm2seasonal(m, season="SON", FUN=sum) )
+```
+
+
+Memplot evolusi waktu dari nilai hujan musiman.
+```{r hydroplot2, fig.width=12, fig.height=10}
+hydroplot(x, pfreq="seasonal", FUN=sum, stype="default")
+```
+
+
+## Beberapa indikasi ekstrim
+
+Langkah yang umum/biasa untuk bagian analisis ini:
+
+
+Memuat data hujan harian dari stasiun pengamatan San Martino di Castrozza, Provinsi Trento, Italia, dengan data sejak 01 Jan 1921 hingga 31 Des 1990.
+```{r LoadingData2}
+data(SanMartinoPPts)
+```
+	
+Memilih hanya potongan data dengan durasi selama 3 tahun untuk analisis.
+```{r Window2}
+x <- window(SanMartinoPPts, start=as.Date("1988-01-01"))
+```
+
+Memplot seri waktu terpilih:
+```{r hydroplot3}
+hydroplot(x,  ptype="ts", pfreq="o", var.unit="mm")
+```
+
+
+### Hari-hari saat hujan lebat (R10mm) - _heavy precipitation days_
+
+Menghitung dan memplot banyaknya hari dalam suatu periode dimana hujan >10 mm.
+```{r R10mm}
+( R10mm <- length( x[x>10] ) )
+```
+
+
+
+### Hari-hari basah (R95p) - _very wet days_
+
+* mengidentifikasi hari-hari hujan (hujan harian >= 1 mm):
+```{r wet_index}
+wet.index <- which(x >= 1)
+```
+	
+	
+* menghitung persentil ke-95 dari hujan pada hari-hari basah (*PRwn95*):
+```{r PRwn95}
+( PRwn95 <- quantile(x[wet.index], probs=0.95, na.rm=TRUE) )
+```
+
+**Catatan 1**: perhitungan ini was dilakukan untuk periode waktu tiga tahun 1988-1990, bukan periode 30 tahun 1961-1990 yang biasa digunakan.
+
+**Catatan 2**: nilai-nilai yang hilang telah dihapus dari perhitungan.
+
+
+* mengidentifikasi hari-hari sangat basah (hujan harian >= *PRwn95*)
+```{r very_wet_index}
+(very.wet.index <- which(x >= PRwn95))
+```
+
+
+* Menghitung hujan total pada hari-hari sangat basah:
+```{r R95p}
+( R95p <- sum(x[very.wet.index]) )
+```
+
+**Catatan 3**: perhitungan ini dilakukan untuk periode waktu tiga tahun 1988-1990, bukan periode 30 tahun 1961-1990 yang biasa digunakan. 
+
+
+### Hujan total 5 harian
+
+Menghitung total (akumulasi) hujan 5 hari:
+
+```{r x_5max}
+x.5max <- rollapply(data=x, width=5, FUN=sum, fill=NA, partial= TRUE, 
+                    align="center")
+
+hydroplot(x.5max,  ptype="ts+boxplot", pfreq="o", var.unit="mm")
+```
+
+Nilai tahunan maksimum dari hujan total 5 hari:
+
+```{r x_5max_annual}
+(x.5max.annual <- daily2annual(x.5max, FUN=max, na.rm=TRUE))
+```
+
+**Catatan 1**: untuk perhitungan ini, digunakan hari pertengahan. Jika teman-teman ingin hujan total 5 hari diakumulasikan dalam 4 hari sebelum hari sekarang + hujan pada hari sekarang, teman-teman harus melalukan modifikasi.
+
+**Catatan 2**: untuk dua nilai awal dan dua nilai terakhir, lebar disesuaikan untuk tidak mengikutsertakan nilai yang bukan di dalam seri waktu.
+
+
+## Klimograf
+
+Sejak versi 0.5-0, `hydroTSM` menyertakan sebuah fungsi untuk memplot klimograf, tidak hanya data hujan/presipitasi tetapi juga data suhu udara seperti:
+
+```{r climograph, fig.width = 8, fig.height = 6, fig.align = "center"}
+# memuat seri waktu harian dari hujan, max dan min suhu
+data(MaquehueTemuco)
+
+# mengekstrak seri waktu individual dari hujan, max dan min suhu
+pcp <- MaquehueTemuco[, 1]
+tmx <- MaquehueTemuco[, 2]
+tmn <- MaquehueTemuco[, 3]
+     
+# memplot klimograf
+m <- climograph(pcp=pcp, tmx=tmx, tmn=tmn, na.rm=TRUE)
+```
+
+
+
+## Detail piranti lunak
+Tutorial ini dibuat dengan spesisifikasi komputer seperti berikut (versi penerjemah): 
+
+```{r echo=FALSE}
+sessionInfo()$platform
+sessionInfo()$R.version$version.string 
+paste("hydroTSM", sessionInfo()$otherPkgs$hydroTSM$Version)
+```
+
+
+## Lampiran
+
+Agar mempermudah penggunaan **hydroTSM** bagi teman-teman yang belum familiar dengan R, penulis menyediakan sekumpulan informasi sebagai panduan untuk teman-teman menggunakan [R](http://www.r-project.org/).
+
+
+### Mengimpor data
+
+*  `?read.table`, `?write.table`: mengizinkan teman-teman untuk membaca/menulis sebuah berkas (dalam format $~$tabel) dan membuat sebuah data frame menggunakannya. Fungsi-fungsi lain yang berkaitan adalah `?read.csv`, `?write.csv`, `?read.csv2`, `?write.csv2`.
+*  [**foreign**](http://cran.r-project.org/web/packages/foreign/): membaca data yang tersimpan dalam beberapa format di luar format R (misalnya: dBase, Minitab, S, SAS, SPSS, Stata, Systat, Weka, ...)
+*  `?zoo::read.zoo`, `?zoo::write.zoo`: fungsi-fungsi untuk membaca dan menulis data seri waktu dari/menjadi berkas teks.
+*  [R Data Import/Export](http://cran.r-project.org/doc/manuals/r-release/R-data.html) (EN)
+*  [beberapa contoh lain](http://www.statmethods.net/input/importingdata.html) (EN)
+
+
+
+### Laman web yang berguna
+
+*  [Quick R](http://www.statmethods.net/) 
+*  [Time series in R](http://cran.r-project.org/web/views/TimeSeries.html)
+*  [Quick reference for the `zoo` package](http://cran.r-project.org/web/packages/zoo/vignettes/zoo-quickref.pdf)
+
+

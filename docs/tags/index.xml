@@ -5,10 +5,37 @@
     <link>/rspatial/tags/</link>
     <description>Recent content in Tags on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/rspatial/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hujan</title>
+      <link>/rspatial/tags/hujan/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/tags/hujan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plot</title>
+      <link>/rspatial/tags/plot/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>timeseries</title>
+      <link>/rspatial/tags/timeseries/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/tags/timeseries/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>analisis</title>
@@ -34,15 +61,6 @@
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/rspatial/tags/peta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/rspatial/tags/plot/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/rspatial/tags/plot/</guid>
       <description></description>
     </item>
     

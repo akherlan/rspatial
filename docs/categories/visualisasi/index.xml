@@ -5,10 +5,23 @@
     <link>/rspatial/categories/visualisasi/</link>
     <description>Recent content in visualisasi on Spatial with R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/rspatial/categories/visualisasi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analisis Data Hujan Harian Menggunakan hydroTSM</title>
+      <link>/rspatial/posts/analisi-hujan-dengan-hydrotsm/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/rspatial/posts/analisi-hujan-dengan-hydrotsm/</guid>
+      <description>Artikel berikut merupakan terjemahan  dari contoh penggunaan paket hydroTSM yang ditulis oleh Mauricio Zambrano-Bigiarini dengan sedikit penyesuaian.
+Instalasi paket Menginstal versi paket stabil terakhir dari CRAN:
+install.packages(&amp;quot;hydroTSM&amp;quot;) Sebagai alternatif, teman-teman bisa juga menginstal versi yang sedang dikembangkan dari Github:
+if (!require(devtools)) install.packages(&amp;quot;devtools&amp;quot;) library(devtools) install_github(&amp;quot;hzambran/hydroTSM&amp;quot;)  Mengatur lingkungan kerja Memuat pustaka hydroTSM, yangmana berisi data dan fungsi-fungsi yang akan digunakan dalam analisis ini.
+library(hydroTSM) ## Loading required package: zoo ## ## Attaching package: &amp;#39;zoo&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## as.</description>
+    </item>
     
     <item>
       <title>Menentukan Batas Plot Peta di R</title>

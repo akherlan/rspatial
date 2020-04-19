@@ -24,41 +24,41 @@ Berikut merupakan daftar paket pustaka R yang bermanfaat untuk bidang teknik sip
 
 # Daftar Paket Pustaka R
 
+## Hidrologi
+
+- CRAN: [Hidrology](https://cran.r-project.org/web/views/Hydrology.html)
+- [AboutHidrology](https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html)
+
 ## Mengolah Data Spasial
 
-sf, sp, maptools - Tools for loading and using spatial data including shapefiles.
+- sf, sp, maptools - Tools for loading and using spatial data including shapefiles.
+- maps - Easy to use map polygons for plots.
+- ggmap - Download street maps straight from Google maps and use them as a background in your ggplots.
 
-maps - Easy to use map polygons for plots.
-
-ggmap - Download street maps straight from Google maps and use them as a background in your ggplots.
 
 ## Time Series
 
-zoo - Provides the most popular format for saving time series objects in R.
-
-xts - Very flexible tools for manipulating time series data sets.
-
-lubridate - Tools that make working with dates and times easier.
+- zoo - Provides the most popular format for saving time series objects in R.
+- xts - Very flexible tools for manipulating time series data sets.
+- lubridate - Tools that make working with dates and times easier.
 
 ## Kinerja dengan Performa Tinggi
 
-Rcpp - Write R functions that call C++ code for lightning fast speed.
-
-data.table - An alternative way to organize data sets for very, very fast operations. Useful for big data.
-
-parallel - Use parallel processing in R to speed up your code or to crunch large data sets.
+- Rcpp - Write R functions that call C++ code for lightning fast speed.
+- data.table - An alternative way to organize data sets for very, very fast operations. Useful for big data.
+- parallel - Use parallel processing in R to speed up your code or to crunch large data sets.
 
 ## Pemodelan
 
-rayshader
+- rayshader
 
 ## Finansial dan Anggaran
 
-quantmod - Tools for downloading financial data, plotting common charts, and doing technical analysis.
+- quantmod - Tools for downloading financial data, plotting common charts, and doing technical analysis.
 
 ## Visual dan Grafik
 
-ggplot2
+- ggplot2
 
 # Referensi
 
